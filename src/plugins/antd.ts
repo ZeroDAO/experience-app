@@ -1,21 +1,4 @@
-import {
-  Button,
-  Card,
-  Row,
-  Col,
-  Tag,
-  Form,
-  Input,
-  ConfigProvider,
-  Select,
-  DatePicker,
-  Dropdown,
-  Menu,
-  Divider,
-  Badge,
-  BackTop,
-  Carousel
-} from 'ant-design-vue'
+import { Avatar, Button, Card, Row, Col, Tag, Tabs, Form, Input, ConfigProvider, Select, DatePicker, Dropdown, Menu, Divider, Badge, BackTop, Carousel, Statistic, Spin, List, Descriptions } from 'ant-design-vue'
 
 /**
  * @description 手动注册 antd-vue 组件,达到按需加载目的
@@ -29,6 +12,7 @@ export default function loadComponent(app: any) {
   app.use(Row)
   app.use(Col)
   app.use(Tag)
+  app.use(Tabs)
   app.use(Form)
   app.use(Input)
   app.use(Dropdown)
@@ -40,4 +24,9 @@ export default function loadComponent(app: any) {
   app.use(BackTop)
   app.use(Badge)
   app.use(Carousel)
+  app.use(Statistic)
+  app.use(Spin)
+  app.use(Avatar)
+  app.use(List)
+  app.use(Descriptions)
 }
