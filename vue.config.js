@@ -83,7 +83,7 @@ module.exports = {
     }
   },
   devServer: {
-    proxy: 'http://10.10.10.115:8002'
+    proxy: 'http://192.168.2.233:8080/'
   },
   pluginOptions: {
     /** 全局加载less 的 webpack 插件  */

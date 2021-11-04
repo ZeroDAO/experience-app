@@ -1,6 +1,55 @@
-import { BasicUserType, RoleType } from '@/@types'
-import store from '@/store'
-import { computed } from 'vue'
+import { decodeAddress, encodeAddress } from '@polkadot/keyring'
+import { hexToU8a, isHex } from '@polkadot/util'
+import BN from 'bn.js'
+
+/**
+ * @description Return true if the address is a legitamate Polkadot address and false if it is not
+ * @param {string} address
+ * @returns {boolean}
+ */
+export const isValidAddressPolkadotAddress = (address: string) => {
+  try {
+    encodeAddress(isHex(address) ? hexToU8a(address) : decodeAddress(address))
+    return true
+  } catch (error) {
+    return false
+  }
+}
+
+/**
+ * @description Return true if the address is a legitamate Polkadot address and false if it is not
+ * @param {string} bal number to be processed
+ * @param {string} unit
+ * @param {string} decimal
+ * @returns {BN}
+ */
+export const reduceDenomToBalance = (bal: number, unit: number, decimal: number) => {
+  if (bal == 0) {
+    return new BN(0)
+  }
+  const unitDecimal = unit + decimal
+  const strBal = bal.toString()
+  const arrDecimalBal = strBal.split('.')
+  const minorityBal = (arrDecimalBal[1] || '').padEnd(unitDecimal, '0').substr(0, unitDecimal)
+  return new BN(arrDecimalBal[0].concat(minorityBal))
+}
+
+export const defaultUnitIndex = 5
+const arrUnitPrefixes = [-15, -12, -9, -6, -3, 0, 3, 6, 9, 12]
+const arrUnitNames = ['femto', 'pico', 'nano', 'micro', 'milli', 'default', 'Kilo', 'Mill', 'Bill', 'Tril']
+
+export const setDefaultUnitName = (defaultName: string) => {
+  arrUnitNames[defaultUnitIndex] = defaultName
+}
+
+export const getUnitNames = () => {
+  return arrUnitNames
+}
+
+export const getUnit = (unitType: string) => {
+  const index = arrUnitNames.findIndex(elem => elem === unitType)
+  return arrUnitPrefixes[index]
+}
 
 /**
  * @description 判断传入的日期是否过期
@@ -18,48 +67,6 @@ export const isValidDate = (endTime: string) => {
   return true
 }
 
-// 是否具备团队编辑权限
-
-export const canEditTeam = computed(() => {
-  if (store.state.user.userDetail.type === 0) {
-    return true
-  }
-  const canEditTeamRoleList = [
-    RoleType['超级管理员'],
-    RoleType['团队超级管理员'],
-    RoleType['团队管理员']
-  ]
-  if (
-    canEditTeamRoleList.includes(store.state.user.currentTeamRoleId as number)
-  ) {
-    return true
-  }
-  return false
-})
-
-// 获取显示的名字
-
-export const getFormmatName = (user: BasicUserType) => {
-  if (user.nickName) {
-    return user.nickName
-  }
-  if (user.username) {
-    return user.username.split('-')[0]
-  }
-  return '团队超级管理员'
-}
-
-// 获取分组名
-export const getGroupName = (key: number): string => {
-  const roleList = store.state.console.roleList
-  for (let i = 0; i < roleList.length; i++) {
-    if (roleList[i].id == key) {
-      return roleList[i].roleName
-    }
-  }
-  return '暂无角色'
-}
-
 /**
  * @description 异步加载  一段js放在 header
  * @param {object} url - js 的 url
@@ -73,18 +80,15 @@ export function loadScript(url: string) {
       script.type = 'text/javascript'
       if (script.readyState) {
         //IE
-        script.onreadystatechange = function () {
-          if (
-            script.readyState == 'loaded' ||
-            script.readyState == 'complete'
-          ) {
+        script.onreadystatechange = function() {
+          if (script.readyState == 'loaded' || script.readyState == 'complete') {
             script.onreadystatechange = null
             Promise.resolve(0)
           }
         }
       } else {
         //Others: Firefox, Safari, Chrome, and Opera
-        script.onload = function () {
+        script.onload = function() {
           Promise.resolve(0)
         }
       }
@@ -102,10 +106,7 @@ export function loadScript(url: string) {
  * @param {string} value - 要查找的值
  * @returns {string} key  返回的 key
  */
-export function findKeyByValue(
-  target: { [key: string]: string },
-  value: string
-): string {
+export function findKeyByValue(target: { [key: string]: string }, value: string): string {
   const keys = Reflect.ownKeys(target) as Array<string>
   for (let i = 0; i < keys.length; i++) {
     if (target[keys[i]] === value) {
@@ -154,34 +155,6 @@ export function utc2Beijing(date: string) {
   }
 
   return `${year}-${month}-${day} ${hour}:${minute}:${second}`
-}
-
-/** 复制文本  */
-export function copyText(test: string) {
-  if (document !== null) {
-    const tag = document.createElement('input')
-    tag.setAttribute('id', 'cp_input')
-    tag.value = test
-    document.getElementsByTagName('body')[0].appendChild(tag)
-    const target: any = document.getElementById('cp_input')
-    if (target) {
-      target.select()
-      target.execCommand('copy')
-      target.remove()
-    }
-  }
-}
-
-/**
- * @description 获取鼠标位置
- * @param {MouseEvent} event
- * @return {x:number,y:number} 鼠标位置
- */
-export function getMousePos(event: any) {
-  const e: any = event || window.event
-  const x = e.clientX
-  const y = e.clientY
-  return { x: x, y: y }
 }
 
 /* eslint-disable */
@@ -261,53 +234,6 @@ export function checkKey(iKey: number) {
   return false
 }
 
-// get cookie value
-export function getCookie(name: string) {
-  const arr = document.cookie.match(
-    new RegExp('(^| )' + name + '=([^;]*)(;|$)')
-  )
-  if (arr != null) return unescape(arr[2])
-  return null
-}
-
-// get page height
-export function getPageHeight() {
-  const g = document
-  const a = g.body
-  const f = g.documentElement
-  const d = g.compatMode === 'BackCompat' ? a : g.documentElement
-  return Math.max(f.scrollHeight, a.scrollHeight, d.clientHeight)
-}
-
-// get page view height
-export function getPageViewHeight() {
-  const d = document
-  const a = d.compatMode === 'BackCompat' ? d.body : d.documentElement
-  return a.clientHeight
-}
-// get page view width
-export function getPageViewWidth() {
-  const d = document
-  const a = d.compatMode === 'BackCompat' ? d.body : d.documentElement
-  return a.clientWidth
-}
-// get page width
-export function getPageWidth() {
-  const g = document
-  const a = g.body
-  const f = g.documentElement
-  const d = g.compatMode === 'BackCompat' ? a : g.documentElement
-  return Math.max(f.scrollWidth, a.scrollWidth, d.clientWidth)
-}
-
-export function getViewSize() {
-  const de = document.documentElement
-  const db = document.body
-  const viewW = de.clientWidth === 0 ? db.clientWidth : de.clientWidth
-  const viewH = de.clientHeight === 0 ? db.clientHeight : de.clientHeight
-  return [viewW, viewH]
-}
-
 export function isAndroidMobileDevice() {
   return /android/i.test(navigator.userAgent.toLowerCase())
 }
@@ -323,41 +249,6 @@ export function isDigit(value: string) {
   } else {
     return true
   }
-}
-
-export const isIphonex = () => {
-  // X XS, XS Max, XR
-  const xSeriesConfig = [
-    {
-      devicePixelRatio: 3,
-      width: 375,
-      height: 812
-    },
-    {
-      devicePixelRatio: 3,
-      width: 414,
-      height: 896
-    },
-    {
-      devicePixelRatio: 2,
-      width: 414,
-      height: 896
-    }
-  ]
-  // h5
-  if (typeof window !== 'undefined' && window) {
-    const isIOS = /iphone/gi.test(window.navigator.userAgent)
-    if (!isIOS) return false
-    const { devicePixelRatio, screen } = window
-    const { width, height } = screen
-    return xSeriesConfig.some(
-      (item) =>
-        item.devicePixelRatio === devicePixelRatio &&
-        item.width === width &&
-        item.height === height
-    )
-  }
-  return false
 }
 
 export function isMobileUserAgent() {
@@ -399,36 +290,6 @@ export function getPageCoord(element: any) {
   return coord
 }
 
-/**
- * @description 设置 cookie
- * @params {string} cookie -键名
- * @params {any} value -存入的值
- * @params {Hours} number -有效期限
- */
-export function setCookie(name: string, value: any, Hours: number) {
-  const d = new Date()
-  const offset = 8
-  const utc = d.getTime() + d.getTimezoneOffset() * 60000
-  const nd = utc + 3600000 * offset
-  const exp = new Date(nd)
-  exp.setTime(exp.getTime() + Hours * 60 * 60 * 1000)
-  document.cookie =
-    name +
-    '=' +
-    escape(value) +
-    ';path=/;expires=' +
-    exp.toUTCString() +
-    ';domain=360doc.com;'
-}
-
-export function uniqueId(): number {
-  const a: any = Math.random
-  const b: any = parseInt
-  return Number(
-    Number(new Date()).toString() + b(10 * a()) + b(10 * a()) + b(10 * a())
-  )
-}
-
 export function utf8Decode(strData: string) {
   let tmpArr: any = []
   let i = 0
@@ -456,140 +317,4 @@ export function utf8Decode(strData: string) {
     }
   }
   return tmpArr.join('')
-}
-
-/**
- * @description 生成随机密码
- * @param len 长度
- */
-export function createPassword(len: number) {
-  //可以生成随机密码的相关数组
-  var num = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-  var english = [
-    'a',
-    'b',
-    'c',
-    'd',
-    'e',
-    'f',
-    'g',
-    'h',
-    'i',
-    'j',
-    'k',
-    'l',
-    'm',
-    'n',
-    'o',
-    'p',
-    'q',
-    'r',
-    's',
-    't',
-    'u',
-    'v',
-    'w',
-    'x',
-    'y',
-    'z'
-  ]
-  var ENGLISH = [
-    'A',
-    'B',
-    'C',
-    'D',
-    'E',
-    'F',
-    'G',
-    'H',
-    'I',
-    'J',
-    'K',
-    'L',
-    'M',
-    'N',
-    'O',
-    'P',
-    'Q',
-    'R',
-    'S',
-    'T',
-    'U',
-    'V',
-    'W',
-    'X',
-    'Y',
-    'Z'
-  ]
-  var special = ['-', '_', '#']
-  var config = num.concat(english).concat(ENGLISH).concat(special)
-
-  //先放入一个必须存在的
-  var arr = []
-  arr.push(getOne(num))
-  arr.push(getOne(english))
-  arr.push(getOne(ENGLISH))
-  arr.push(getOne(special))
-
-  for (var i = 4; i < len; i++) {
-    //从数组里面抽出一个
-    arr.push(config[Math.floor(Math.random() * config.length)])
-  }
-
-  //乱序
-  var newArr = []
-  for (var j = 0; j < len; j++) {
-    newArr.push(arr.splice(Math.random() * arr.length, 1)[0])
-  }
-
-  //随机从数组中抽出一个数值
-  function getOne(arr: string | any[]) {
-    return arr[Math.floor(Math.random() * arr.length)]
-  }
-
-  return newArr.join('')
-}
-
-/**
- * @description 获取字节数
- * @param s 字符串
- */
-export function getBytesLength(s: string) {
-  return s.replace(/[^\x00-\xff]/gi, '--').length
-}
-
-/**
- * 获取服务器时间
- * 注意：
- * 这个函数在本地运行会拿到本地时间，但是放到服务器上，会正常运行！
- */
-export function getServerTime() {
-  var xmlHttp: XMLHttpRequest
-  function srvTime() {
-    try {
-      // FF, Opera, Safari, Chrome
-      xmlHttp = new XMLHttpRequest()
-    } catch (err1) {
-      //IE
-      try {
-        xmlHttp = new ActiveXObject('Msxml2.XMLHTTP')
-      } catch (err2) {
-        try {
-          xmlHttp = new ActiveXObject('Microsoft.XMLHTTP')
-        } catch (eerr3) {
-          //AJAX not supported, use CPU time.
-          alert('AJAX not supported')
-        }
-      }
-    }
-    xmlHttp.open('HEAD', window.location.href.toString(), false)
-    xmlHttp.setRequestHeader('Content-Type', 'text/html')
-    xmlHttp.send('')
-    return xmlHttp.getResponseHeader('Date')
-  }
-
-  var st = srvTime()
-  var date = new Date(st as string)
-  var timestamp = date.getTime()
-  return timestamp
 }

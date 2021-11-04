@@ -1,24 +1,119 @@
 @import './normalize.css';
-@import './var.less';
+@import './antd.less';
 @import './iconfont.less';
 @import './common.less';
 
-body, .box-grey-background, .ant-input-search input {
-    background-color: @box-background;
-  }
+body,
+.box-grey-background,
+.ant-input-search input {
+  background-color: @box-background;
+}
 
 .border-primary {
   border: 1px solid @primary-color;
 }
 
 .primary-bg {
-  background-color: @primary-bg;
+  background-color: @primary-color;
+  color: #FFF;
+}
+
+.primary-light-bg {
+  background-color: @primary-light;
 }
 
 .primary {
   color: @primary;
 }
 
+.primary-hover {
+  &:hover {
+    background: @primary  !important;
+    color: #fff;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
 .text-second {
   color: @text-color-secondary;
+}
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background: none !important;
+
+  .identicon {
+    background: @primary;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.ant-menu-dark,
+.ant-layout-header,
+.ant-layout {
+  background: #001529 !important;
+}
+
+.ant-layout-header {
+  display: flex !important;
+  padding: 0 !important;
+  justify-content: flex-end !important;
+}
+
+.ant-statistic-content-value-int,
+.ant-card-head-title {
+  color: #ffffff !important;
+}
+
+.ant-btn-primary[disabled],
+.ant-btn-primary[disabled]:hover,
+.ant-btn-primary[disabled]:focus,
+.ant-btn-primary[disabled]:active {
+  color: #8b8585 !important;
+  border: 1px solid #5f5e5e !important;
+}
+
+.ant-btn-background-ghost {
+  background: #141414 !important;
+  border: 1px solid @primary;
+  color: @primary  !important;
+
+  &:hover {
+    background: #020486 !important;
+  }
+}
+
+.ant-modal-content {
+  border-radius: 20px;
+  overflow: hidden;
+
+  .ant-modal-title {
+    color: #ffffff;
+  }
+
+  .ant-radio-group {
+    max-height: 400px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: @primary;
+    }
+  }
+
+  .ant-form-item-label>label {
+    color: #ffffff;
+  }
+}
+
+.ant-input-affix-wrapper {
+  border: 1px solid #03178f !important;
+}
+
+.ant-notification-notice-message {
+  color: #ffffff !important;
 }

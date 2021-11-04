@@ -17,8 +17,9 @@ app.config.globalProperties = AppConfig
 
 /** 加载所有 Plugins */
 loadAllPlugins(app)
-
-/** 自动注册全局组件  */
 registeGlobalComponent(app)
 
-app.use(store).use(router).mount('#app')
+app
+  .use(store)
+  .use(router)
+  .mount('#app')

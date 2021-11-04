@@ -1,17 +1,15 @@
 import store from '@/store'
 
-// 定义 state 下的 module 值
-type ModuleNameType = 'app' | 'console' | 'user'
+// Define the module value under state
+type ModuleNameType = 'app' | 'general'
 
 /**
- * @description setStoreState -方法是一个 mutaitions 的操作
- * @type {T} T - 你要更改的模块的类型
- * @param {string}  module - 要操作的state 的 module 名
- * @param {string}  key - 要操作的state 的 module 下的 key 值
- * @param {any} value - 当有 msg 参数时,视为赋值操作,触发 mutation,msg 则为要复制的数据.
- * @example 如果需要更改 app 模块下的 theme为 dark，这样使用：setStoreState('app','theme','dark')
- * @example 目前只支持更改 module 的 state 第一层，不支持单独修改深层嵌套的 key，如需更改，请直接替换第一层的对象
- *  如
+ * @description setStoreState - method is an operation of mutaitions
+ * @type {T} T - The type of module you want to change
+ * @param {string}  module - The module name of the state to be manipulated
+ * @param {string}  key - The key value under the module of the state to be manipulated
+ * @param {any} value - When there is a msg parameter, it is considered an assignment and triggers mutation, and msg is the data to be copied.
+ *  // as if
  *   ``` const state = {
  *                 name: {
  *                   firstName:'jack',
@@ -19,14 +17,10 @@ type ModuleNameType = 'app' | 'console' | 'user'
  *                 }
  *               }
  *   ```
- *  想要单独修改 firstName,直接使用 setStoreState<AppStateType>('app','name',{firstName:'modifiedName',lastName:'Ma'})
+ *  To modify the firstName individually, use the setStoreState<AppStateType>('app','name',{firstName:'modifiedName',lastName:'Ma'})
  */
 
-export function setStoreState<T>(
-  module: ModuleNameType,
-  key: keyof T,
-  value: any
-) {
+export function setStoreState<T>(module: ModuleNameType, key: keyof T, value: any) {
   store.commit({
     type: module + '/__set',
     key: key,
@@ -35,22 +29,18 @@ export function setStoreState<T>(
 }
 
 /**
- * @description 封装 dispatch 方法
- * @type {T} T  你要派发actions的模块的类型
- * @example 使用方法如下  const result = await dispatchActions<UserActionsType>('console','refreshToken',1)
+ * @description the dispatch method
+ * @type {T} T  The type of module to which you want to distribute actions
+ * @example const result = await dispatchActions<UserActionsType>('console','refreshToken',1)
  */
-export function dispatchAction<T>(
-  module: ModuleNameType,
-  key: keyof T,
-  value?: any
-) {
+export function dispatchAction<T>(module: ModuleNameType, key: keyof T, value?: any) {
   store.dispatch(`${module}/${key}`, value)
 }
 
 /**
- * @description 封装 dispatch 方法
- * @type {T} T  你要获取 getters的模块的类型
- * @example 使用方法如下  const result =  getStoreGetter<ConsoleGetterType>('console','list')
+ * @description the Getter method
+ * @type {T} T  The type of module you want to get getters from
+ * @example const result =  getStoreGetter<ConsoleGetterType>('console','list')
  */
 export function getStoreGetter<T>(module: ModuleNameType, key: keyof T) {
   return store.getters[`${module}/${key}`]

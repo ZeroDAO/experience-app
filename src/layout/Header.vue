@@ -2,10 +2,10 @@
   <a-layout-header>
     <a-row :gutter="[16, 16]">
       <a-col :span="6"><div class="logo"></div></a-col>
-      <a-col :span="12" class="search">
-        <a-input-search v-model:value="value" size="large" placeholder="Name/Address/Index/" @search="onSearch" />
+      <a-col :span="18" class="search">
+        <a-input-search v-model:value="value" size="large" placeholder="Address" @search="onSearch" />
       </a-col>
-      <a-col :span="6" class="right">
+      <!-- <a-col :span="6" class="right">
         <a-select v-model:value="network" class="round box-grey-background" dropdownClassName="network-dropdown" @focus="focus" ref="select" size="large" :dropdownMatchSelectWidth="false" @change="handleChange">
           <a-select-option value="polkadot">
             <div>
@@ -20,8 +20,8 @@
             </div>
           </a-select-option>
         </a-select>
-        <a-button type="primary" shape="round" size="large"> 登录 </a-button>
-      </a-col>
+
+      </a-col> -->
     </a-row>
   </a-layout-header>
 </template>

@@ -19,12 +19,7 @@ if (!__LOCALE__) {
   setStoreState('app', 'language', 'zhCN')
 }
 
-/** 定义语言模版 */
 export const Locales: any = {}
-
-/**
- * @todo 语言名字命名要考虑三个部分：一是 antdv 组件国际化的语言名字，二是 i18n模版语言的命名，三是浏览器对于语言的命名（这里会跟 http 请* 求相关，也是后端能识别的语言命名），因此要将前两种语言的名字通过字典转换成标准名称，也就是浏览器的语言名使用SO 639-1标准
- */
 
 export const TranslateTable: { [key: string]: string } = {
   en: 'en_US',
@@ -45,7 +40,7 @@ export const i18nInstance = useI18n({
 })
 
 /**
- * @description 自动加载 antd-vue 需要的语言模版
+ * @description Automatic loading of language templates required by antd-vue
  */
 function loadAtdLocales() {
   const files = require.context('../../node_modules/ant-design-vue/es/locale-provider', true, /\.js$/)
@@ -68,7 +63,7 @@ function loadAtdLocales() {
 
 function _set(lang: keyof typeof TranslateTable): keyof typeof TranslateTable {
   i18nInstance.locale.value = lang as any
-  // 设置当前语言的时间
+  // Set the time for the current language
   moment.locale(TranslateTable[lang])
   // Axios.defaults.headers.common['Accept-Language'] = lang
   setStoreState('app', 'language', lang)
@@ -76,9 +71,9 @@ function _set(lang: keyof typeof TranslateTable): keyof typeof TranslateTable {
 }
 
 /**
- * @functin 异步加载自定义的 i18n 模版
- * @param {string} lang - 将要更换的语言
- * @return {string} lang - 返回将要更改的语言明后才能
+ * @functin Asyn loading of custom i18n templates
+ * @param {string} lang - Language to be replaced
+ * @return {string} lang - Only after returning the language to be changed
  */
 export function setLang(lang: string): Promise<keyof typeof TranslateTable | 'same'> {
   if (lang === i18nInstance.locale.value) {
@@ -87,8 +82,5 @@ export function setLang(lang: string): Promise<keyof typeof TranslateTable | 'sa
   return Promise.resolve(_set(lang))
 }
 
-/* 加载 antd 模版 */
 loadAtdLocales()
-
-/** 设置初始化语言 */
 setLang(__LOCALE__)

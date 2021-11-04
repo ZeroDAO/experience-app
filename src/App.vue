@@ -1,7 +1,7 @@
 <template>
   <a-config-provider :locale="currentLanguage">
     <div id="app">
-      <full-loading :show="fullLoading" :text="loadingText" />
+      <full-loading :show="fullLoading" :text="loadingText"></full-loading>
       <app-layout />
     </div>
   </a-config-provider>
@@ -13,13 +13,29 @@ import AppLayout from '@/layout/AppLayout.vue'
 import { Locales } from '@/i18n/index'
 import { useStore } from 'vuex'
 import { StateType } from '@/@types'
+import { setStoreState } from '@/store/utils'
 
 const App = defineComponent({
+  components: {
+    AppLayout
+  },
   setup() {
     const store = useStore<StateType>()
     const fullLoading = computed(() => store.state.app.fullLoading)
     const loadingText = computed(() => store.state.app.loadingText)
     const currentLanguage = computed(() => Locales[store.state.app.language])
+
+    setStoreState('general', 'isLoading', false)
+
+    const networkId = localStorage.getItem('networkId')
+    const customEndpoint = localStorage.getItem('customEndpoint')
+
+    if (networkId) {
+      setStoreState('general', 'currentNetworkId', parseInt(networkId))
+    }
+    if (customEndpoint) {
+      setStoreState('general', 'currentCustomEndpoint', customEndpoint)
+    }
 
     return {
       currentLanguage,
@@ -27,9 +43,6 @@ const App = defineComponent({
       fullLoading,
       Locales
     }
-  },
-  components: {
-    AppLayout
   }
 })
 export default App
@@ -63,6 +76,7 @@ export default App
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100%;
 }
 
 #nav {
