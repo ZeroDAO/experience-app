@@ -1,4 +1,4 @@
-import { Typography, InputNumber, Modal, Radio, Layout, Avatar, Button, Card, Row, Col, Tag, Tabs, Form, Input, ConfigProvider, Select, DatePicker, Dropdown, Menu, Divider, Badge, BackTop, Carousel, Statistic, Spin, List, Descriptions } from 'ant-design-vue'
+import { Progress, Steps, Typography, InputNumber, Modal, Radio, Layout, Avatar, Button, Card, Row, Col, Tag, Tabs, Form, Input, ConfigProvider, Select, DatePicker, Dropdown, Menu, Divider, Badge, BackTop, Carousel, Statistic, Spin, List, Descriptions } from 'ant-design-vue'
 
 /**
  * @description 手动注册 antd-vue 组件,达到按需加载目的
@@ -8,6 +8,8 @@ import { Typography, InputNumber, Modal, Radio, Layout, Avatar, Button, Card, Ro
  */
 export default function loadComponent(app: any) {
   app.use(Button)
+  app.use(Steps)
+  app.use(Progress)
   app.use(Typography)
   app.use(Modal)
   app.use(Radio)

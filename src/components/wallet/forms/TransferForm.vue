@@ -21,7 +21,7 @@ import type { UnwrapRef } from 'vue'
 import TransactionAction from '../../common/TransactionAction.vue'
 import { Attrs, TxType } from '@/@types'
 import { RuleObject } from 'ant-design-vue/es/form/interface'
-import { isValidAddressPolkadotAddress, reduceDenomToBalance, getUnit } from '@/utils/common'
+import { isValidAddressPolkadotAddress, reduceDenomToBalance } from '@/utils/common'
 import { useStore } from 'vuex'
 
 interface FormState {
@@ -68,9 +68,6 @@ export default defineComponent({
       wrapperCol: { span: 20 }
     }
 
-    const selectUnit = ref(chainInfo.value.defaultUnitToken)
-    const unit = getUnit(selectUnit.value)
-
     const checkAmount = async (_rule: RuleObject, value: number) => {
       if (value <= 0) {
         return Promise.reject('Amount must be greater than 0')
@@ -99,7 +96,7 @@ export default defineComponent({
     })
 
     const handleFinish = (values: FormState) => {
-      attrsRef.value.params = [values.to, reduceDenomToBalance(values.amount, unit, chainInfo.value.decimal)]
+      attrsRef.value.params = [values.to, reduceDenomToBalance(values.amount, chainInfo.value.decimal)]
       txRef.value.transaction()
     }
 

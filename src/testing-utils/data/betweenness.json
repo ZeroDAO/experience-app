@@ -1,0 +1,1630 @@
+[
+  {
+    "id": "DAENERYS",
+    "value": 13780.657233568132
+  },
+  {
+    "id": "TYRION",
+    "value": 12852.596632361105
+  },
+  {
+    "id": "ARYA",
+    "value": 12368.107173844981
+  },
+  {
+    "id": "JON",
+    "value": 12100.386598052111
+  },
+  {
+    "id": "JAIME",
+    "value": 7908.236301224381
+  },
+  {
+    "id": "THEON",
+    "value": 6881.469913815813
+  },
+  {
+    "id": "CERSEI",
+    "value": 5869.905004263833
+  },
+  {
+    "id": "SAM",
+    "value": 5756.1146199683135
+  },
+  {
+    "id": "SANSA",
+    "value": 5609.979105136579
+  },
+  {
+    "id": "NED",
+    "value": 4896.271077592175
+  },
+  {
+    "id": "JORAH",
+    "value": 4726.371808894663
+  },
+  {
+    "id": "BRAN",
+    "value": 4075.9168071478607
+  },
+  {
+    "id": "DAVOS",
+    "value": 3876.5101263158713
+  },
+  {
+    "id": "HOUND",
+    "value": 3799.6691493130106
+  },
+  {
+    "id": "ROBB",
+    "value": 3595.5641134317143
+  },
+  {
+    "id": "BRONN",
+    "value": 3279.184788042604
+  },
+  {
+    "id": "JOFFREY",
+    "value": 3091.4584162646843
+  },
+  {
+    "id": "CATELYN",
+    "value": 3060.2055094863867
+  },
+  {
+    "id": "VARYS",
+    "value": 2828.825202800961
+  },
+  {
+    "id": "TORMUND",
+    "value": 2613.01787710516
+  },
+  {
+    "id": "TYWIN",
+    "value": 2015.789478273843
+  },
+  {
+    "id": "RAMSAY",
+    "value": 1960.2532528651773
+  },
+  {
+    "id": "LITTLEFINGER",
+    "value": 1776.8400752187767
+  },
+  {
+    "id": "BRIENNE",
+    "value": 1630.918872630064
+  },
+  {
+    "id": "STANNIS",
+    "value": 1516.440862894156
+  },
+  {
+    "id": "LADY_CRANE",
+    "value": 1343.2217120204218
+  },
+  {
+    "id": "OBERYN",
+    "value": 1282.4042159415567
+  },
+  {
+    "id": "KARL_TANNER",
+    "value": 1224.0931982941709
+  },
+  {
+    "id": "SHAE",
+    "value": 1173.1888501216397
+  },
+  {
+    "id": "MISSANDEI",
+    "value": 1053.5068107229092
+  },
+  {
+    "id": "GREY_WORM",
+    "value": 1042.246624350223
+  },
+  {
+    "id": "EDMURE",
+    "value": 1001.999227868278
+  },
+  {
+    "id": "OLENNA",
+    "value": 980.0890411045991
+  },
+  {
+    "id": "ROBERT",
+    "value": 974.0003153545939
+  },
+  {
+    "id": "GILLY",
+    "value": 961.9280372792117
+  },
+  {
+    "id": "MELISANDRE",
+    "value": 921.0746863203477
+  },
+  {
+    "id": "GENDRY",
+    "value": 917.545547689259
+  },
+  {
+    "id": "YARA",
+    "value": 902.6854153957374
+  },
+  {
+    "id": "HOT_PIE",
+    "value": 878.4443849987381
+  },
+  {
+    "id": "ELLARIA",
+    "value": 864.7876960610704
+  },
+  {
+    "id": "WALDER",
+    "value": 861.4998048109513
+  },
+  {
+    "id": "MAREI",
+    "value": 828.2998350108503
+  },
+  {
+    "id": "SISSY",
+    "value": 801.5483716475096
+  },
+  {
+    "id": "DROGO",
+    "value": 743.9373870811895
+  },
+  {
+    "id": "ROOSE_BOLTON",
+    "value": 743.4994228600852
+  },
+  {
+    "id": "JEOR",
+    "value": 732.4395914803084
+  },
+  {
+    "id": "CRAYAH",
+    "value": 642.2868216013377
+  },
+  {
+    "id": "QYBURN",
+    "value": 633.4269395286826
+  },
+  {
+    "id": "EDDISON_TOLLETT",
+    "value": 585.1271892011398
+  },
+  {
+    "id": "MORGAN",
+    "value": 584.4073524562717
+  },
+  {
+    "id": "BARRISTAN",
+    "value": 581.387095857265
+  },
+  {
+    "id": "GRENN",
+    "value": 569.5891954732597
+  },
+  {
+    "id": "ROS",
+    "value": 536.7438807394839
+  },
+  {
+    "id": "PYP",
+    "value": 519.5033513554625
+  },
+  {
+    "id": "PODRICK",
+    "value": 491.5877104081894
+  },
+  {
+    "id": "LORAS",
+    "value": 484.5869281336041
+  },
+  {
+    "id": "JANOS",
+    "value": 481.4790960403378
+  },
+  {
+    "id": "TALISA",
+    "value": 469.7612406695157
+  },
+  {
+    "id": "THOROS",
+    "value": 467.2702831106067
+  },
+  {
+    "id": "RICKON",
+    "value": 465.7334082487756
+  },
+  {
+    "id": "MOUNTAIN",
+    "value": 447.4276715589771
+  },
+  {
+    "id": "LYANNA",
+    "value": 431.8731817055446
+  },
+  {
+    "id": "MANCE",
+    "value": 422.1540671014158
+  },
+  {
+    "id": "JORY_CASSEL",
+    "value": 407.7854715433008
+  },
+  {
+    "id": "CRASTERS_BABY",
+    "value": 404.1454878454878
+  },
+  {
+    "id": "RORGE",
+    "value": 401.43025210084033
+  },
+  {
+    "id": "MELESSA",
+    "value": 401.33333333333337
+  },
+  {
+    "id": "MERO",
+    "value": 401.31111111111113
+  },
+  {
+    "id": "FARMER_HAMLET",
+    "value": 401
+  },
+  {
+    "id": "ARTHUR",
+    "value": 401
+  },
+  {
+    "id": "BERIC",
+    "value": 389.9335802299874
+  },
+  {
+    "id": "AERYS",
+    "value": 387.0965057143243
+  },
+  {
+    "id": "MERYN_TRANT",
+    "value": 362.92551737441704
+  },
+  {
+    "id": "RENLY",
+    "value": 361.895874988699
+  },
+  {
+    "id": "DAREON",
+    "value": 345.6497188097693
+  },
+  {
+    "id": "TYENE",
+    "value": 338.0509903253704
+  },
+  {
+    "id": "BRYNDEN",
+    "value": 326.0335239133431
+  },
+  {
+    "id": "ALLISER_THORNE",
+    "value": 319.0438207727249
+  },
+  {
+    "id": "MAESTER_LUWIN",
+    "value": 312.24396135194274
+  },
+  {
+    "id": "BIANCA",
+    "value": 298.16809653398064
+  },
+  {
+    "id": "RICKARD_KARSTARK",
+    "value": 290.00364215163574
+  },
+  {
+    "id": "MAESTER_WOLKAN",
+    "value": 286.9077119764885
+  },
+  {
+    "id": "SHIREEN",
+    "value": 283.85834990236646
+  },
+  {
+    "id": "MAESTER_AEMON",
+    "value": 249.2640965796428
+  },
+  {
+    "id": "AEGON",
+    "value": 248.96164800311053
+  },
+  {
+    "id": "DOREAH",
+    "value": 247.30470085470088
+  },
+  {
+    "id": "OWEN",
+    "value": 242.00000000000003
+  },
+  {
+    "id": "DESMOND",
+    "value": 242
+  },
+  {
+    "id": "SALLADHOR",
+    "value": 241.88794258373204
+  },
+  {
+    "id": "MOSSADOR",
+    "value": 241.44595284235817
+  },
+  {
+    "id": "LOLLYS",
+    "value": 241.00000000000006
+  },
+  {
+    "id": "GOATHERD",
+    "value": 241
+  },
+  {
+    "id": "LYANNA_MORMONT",
+    "value": 232.55045700827853
+  },
+  {
+    "id": "YGRITTE",
+    "value": 228.40046998779883
+  },
+  {
+    "id": "NIGHT_KING",
+    "value": 228.37402728803684
+  },
+  {
+    "id": "RANDYLL",
+    "value": 227.45068255049853
+  },
+  {
+    "id": "MARGAERY",
+    "value": 219.70352958578565
+  },
+  {
+    "id": "YOHN_ROYCE",
+    "value": 219.18678013753134
+  },
+  {
+    "id": "EURON",
+    "value": 214.46699295137665
+  },
+  {
+    "id": "WILL",
+    "value": 214.06352956497068
+  },
+  {
+    "id": "HODOR",
+    "value": 212.72295286115852
+  },
+  {
+    "id": "OLLY",
+    "value": 200.40121943693626
+  },
+  {
+    "id": "TRYSTANE",
+    "value": 198.59413341332424
+  },
+  {
+    "id": "PYCELLE",
+    "value": 195.08298666832226
+  },
+  {
+    "id": "LOCKE",
+    "value": 190.0457967371264
+  },
+  {
+    "id": "MEERA",
+    "value": 182.87650512446717
+  },
+  {
+    "id": "RAY",
+    "value": 173.13002725203646
+  },
+  {
+    "id": "ROBIN",
+    "value": 161.93553660461248
+  },
+  {
+    "id": "OSHA",
+    "value": 155.41652323432686
+  },
+  {
+    "id": "LITTLE_SAM",
+    "value": 134.5186772260734
+  },
+  {
+    "id": "DAARIO",
+    "value": 131.46850236255187
+  },
+  {
+    "id": "RAST",
+    "value": 126.09237089009181
+  },
+  {
+    "id": "MACE",
+    "value": 124.62832242966762
+  },
+  {
+    "id": "KEVAN",
+    "value": 117.87186271689114
+  },
+  {
+    "id": "BENJEN",
+    "value": 115.88995676715348
+  },
+  {
+    "id": "LYSA",
+    "value": 114.27497720044362
+  },
+  {
+    "id": "JOJEN",
+    "value": 113.39253736080607
+  },
+  {
+    "id": "MYRCELLA",
+    "value": 103.91403320565735
+  },
+  {
+    "id": "RODRIK",
+    "value": 103.5668525856938
+  },
+  {
+    "id": "YOREN",
+    "value": 98.18159246379689
+  },
+  {
+    "id": "OLYVAR",
+    "value": 97.05143968016644
+  },
+  {
+    "id": "LEM",
+    "value": 94.89570641436269
+  },
+  {
+    "id": "WUN_WUN",
+    "value": 92.50857080276933
+  },
+  {
+    "id": "MYRANDA",
+    "value": 87.5812357978342
+  },
+  {
+    "id": "TOMMEN",
+    "value": 86.18927209110467
+  },
+  {
+    "id": "LOTHAR",
+    "value": 85.53068730112484
+  },
+  {
+    "id": "DICKON",
+    "value": 82.73709680597428
+  },
+  {
+    "id": "AREO",
+    "value": 77.5289343990161
+  },
+  {
+    "id": "CRASTER",
+    "value": 75.85698167104943
+  },
+  {
+    "id": "HIGH_SPARROW",
+    "value": 72.87148074947977
+  },
+  {
+    "id": "ROYCE",
+    "value": 71.56163729715267
+  },
+  {
+    "id": "LANCEL",
+    "value": 70.03731064037876
+  },
+  {
+    "id": "STYR",
+    "value": 63.90735578489553
+  },
+  {
+    "id": "JAQEN",
+    "value": 60.038220167578224
+  },
+  {
+    "id": "GREATJON_UMBER",
+    "value": 58.467160305147075
+  },
+  {
+    "id": "WALDA",
+    "value": 55.01042382532432
+  },
+  {
+    "id": "HIZDAHR",
+    "value": 54.454596723764254
+  },
+  {
+    "id": "MAG_THE_MIGHTY",
+    "value": 51.86889561782733
+  },
+  {
+    "id": "JOFFREY_DWARF",
+    "value": 51.5609111622401
+  },
+  {
+    "id": "OTHELL_YARWYCK",
+    "value": 51.5239012433545
+  },
+  {
+    "id": "HIGH_SEPTON",
+    "value": 45.518615545845364
+  },
+  {
+    "id": "TYCHO",
+    "value": 43.67191840737246
+  },
+  {
+    "id": "THREE_EYED_RAVEN",
+    "value": 41.671580778932906
+  },
+  {
+    "id": "DORAN",
+    "value": 41.25257819582983
+  },
+  {
+    "id": "ROBB_DWARF",
+    "value": 35.37161128260682
+  },
+  {
+    "id": "MHAEGEN",
+    "value": 34.61706255233395
+  },
+  {
+    "id": "MATTHOS",
+    "value": 33.85922062610479
+  },
+  {
+    "id": "ORELL",
+    "value": 30.65565328102494
+  },
+  {
+    "id": "SELYSE",
+    "value": 29.380377894012657
+  },
+  {
+    "id": "BALON",
+    "value": 29.061315782938618
+  },
+  {
+    "id": "ELDER_MEEREEN_SLAVE",
+    "value": 27.595457611223306
+  },
+  {
+    "id": "OBARA",
+    "value": 24.079333230949658
+  },
+  {
+    "id": "ALTON",
+    "value": 23.733667693599948
+  },
+  {
+    "id": "POLLIVER",
+    "value": 22.775127635617338
+  },
+  {
+    "id": "AMORY",
+    "value": 20.83793279354171
+  },
+  {
+    "id": "JON_ARRYN",
+    "value": 20.208224655185017
+  },
+  {
+    "id": "VISERYS",
+    "value": 15.865784783819617
+  },
+  {
+    "id": "THIN_MAN",
+    "value": 15.414258843858773
+  },
+  {
+    "id": "ALYS",
+    "value": 14.506223779708602
+  },
+  {
+    "id": "ROSLIN",
+    "value": 13.917167673639742
+  },
+  {
+    "id": "MARTYN",
+    "value": 13.912229781227689
+  },
+  {
+    "id": "VALA",
+    "value": 12.768347338935573
+  },
+  {
+    "id": "ROBETT",
+    "value": 11.946794108359626
+  },
+  {
+    "id": "DAGMER",
+    "value": 11.851914038925512
+  },
+  {
+    "id": "BRANDON_STARK",
+    "value": 11.274988206238206
+  },
+  {
+    "id": "MARWYN",
+    "value": 11.170390127260257
+  },
+  {
+    "id": "LEO_LEFFORD",
+    "value": 9.840647223710723
+  },
+  {
+    "id": "XARO",
+    "value": 8.985790598290595
+  },
+  {
+    "id": "OLLYS_MOTHER",
+    "value": 8.97189342910426
+  },
+  {
+    "id": "SEPTA_MORDANE",
+    "value": 7.7648012642672075
+  },
+  {
+    "id": "WHITE_WALKER",
+    "value": 7.757191758474312
+  },
+  {
+    "id": "SMALLJON",
+    "value": 7.489870646842766
+  },
+  {
+    "id": "FIRST_MATE",
+    "value": 7.274732373056552
+  },
+  {
+    "id": "ILLYRIO",
+    "value": 7.013935784524019
+  },
+  {
+    "id": "DIRAH",
+    "value": 6.543290043290043
+  },
+  {
+    "id": "IRRI",
+    "value": 6.423092185592185
+  },
+  {
+    "id": "QHORIN",
+    "value": 6.0990367642251195
+  },
+  {
+    "id": "BLACK_WALDER",
+    "value": 5.268847140587256
+  },
+  {
+    "id": "ANGUY",
+    "value": 5.111586539180163
+  },
+  {
+    "id": "MORD",
+    "value": 4.573334930615034
+  },
+  {
+    "id": "BOBONO",
+    "value": 4.548153235653236
+  },
+  {
+    "id": "RALF",
+    "value": 3.8905800059670788
+  },
+  {
+    "id": "KOVARRO",
+    "value": 3.819123931623931
+  },
+  {
+    "id": "VARDIS_EGEN",
+    "value": 3.6588023088023087
+  },
+  {
+    "id": "NYMERIA",
+    "value": 3.6320840391492557
+  },
+  {
+    "id": "HOSTER",
+    "value": 3.587323787323787
+  },
+  {
+    "id": "GLOVER",
+    "value": 3.541301148629014
+  },
+  {
+    "id": "IZEMBARO",
+    "value": 3.4021214896214897
+  },
+  {
+    "id": "MARILLION",
+    "value": 3.272089496436163
+  },
+  {
+    "id": "SPICE_KING",
+    "value": 2.5972222222222223
+  },
+  {
+    "id": "RENLY_DWARF",
+    "value": 2.2673394960159667
+  },
+  {
+    "id": "RAKHARO",
+    "value": 2.25
+  },
+  {
+    "id": "WAIF",
+    "value": 2.1666666666666665
+  },
+  {
+    "id": "RHAEGAR",
+    "value": 2.0666666666666664
+  },
+  {
+    "id": "CLARENZO",
+    "value": 2.0532106782106783
+  },
+  {
+    "id": "BAELOR",
+    "value": 1.5927883205639795
+  },
+  {
+    "id": "MAGGY",
+    "value": 1.5780663594024327
+  },
+  {
+    "id": "DERRYK",
+    "value": 1.4570400359874043
+  },
+  {
+    "id": "HOWLAND",
+    "value": 1.366878376108664
+  },
+  {
+    "id": "STANNIS_DWARF",
+    "value": 1.2673394960159667
+  },
+  {
+    "id": "KARSI",
+    "value": 1.0929292929292929
+  },
+  {
+    "id": "ANYA_WAYNWOOD",
+    "value": 1.059090909090909
+  },
+  {
+    "id": "DONNEL_HILL",
+    "value": 1
+  },
+  {
+    "id": "LORD_OF_BONES",
+    "value": 0.8999999999999999
+  },
+  {
+    "id": "WINE_MERCHANT",
+    "value": 0.8683913308913309
+  },
+  {
+    "id": "KRAZNYS_MO_NAKLOZ",
+    "value": 0.8398541891452483
+  },
+  {
+    "id": "LOMMY",
+    "value": 0.7857142857142857
+  },
+  {
+    "id": "CAMELLO",
+    "value": 0.7328574203574205
+  },
+  {
+    "id": "CRESSEN",
+    "value": 0.5428571428571428
+  },
+  {
+    "id": "GALBART_GLOVER",
+    "value": 0.5
+  },
+  {
+    "id": "FENNESZ",
+    "value": 0.5
+  },
+  {
+    "id": "DONTOS",
+    "value": 0.2413951545530493
+  },
+  {
+    "id": "HARRY",
+    "value": 0.2346390168970814
+  },
+  {
+    "id": "SEPTA_UNELLA",
+    "value": 0.1111111111111111
+  },
+  {
+    "id": "ADDAM_MARBRAND",
+    "value": 0
+  },
+  {
+    "id": "ASSASSIN",
+    "value": 0
+  },
+  {
+    "id": "BORCAS",
+    "value": 0
+  },
+  {
+    "id": "BOWEN_MARSH",
+    "value": 0
+  },
+  {
+    "id": "COHOLLO",
+    "value": 0
+  },
+  {
+    "id": "GARED",
+    "value": 0
+  },
+  {
+    "id": "HUGH_OF_THE_VALE",
+    "value": 0
+  },
+  {
+    "id": "ILYN_PAYNE",
+    "value": 0
+  },
+  {
+    "id": "IROGENIA",
+    "value": 0
+  },
+  {
+    "id": "JAREMY_RYKKER",
+    "value": 0
+  },
+  {
+    "id": "JHIQUI",
+    "value": 0
+  },
+  {
+    "id": "JOANNA",
+    "value": 0
+  },
+  {
+    "id": "JONOS_BRACKEN",
+    "value": 0
+  },
+  {
+    "id": "JOYEUSE",
+    "value": 0
+  },
+  {
+    "id": "LITTLE_BIRD",
+    "value": 0
+  },
+  {
+    "id": "LOMMY_GREENHANDS",
+    "value": 0
+  },
+  {
+    "id": "LUKE",
+    "value": 0
+  },
+  {
+    "id": "MAGO",
+    "value": 0
+  },
+  {
+    "id": "MASHA_HEDDLE",
+    "value": 0
+  },
+  {
+    "id": "MIRRI_MAZ_DUUR",
+    "value": 0
+  },
+  {
+    "id": "MYCAH",
+    "value": 0
+  },
+  {
+    "id": "OLD_NAN",
+    "value": 0
+  },
+  {
+    "id": "OTHOR",
+    "value": 0
+  },
+  {
+    "id": "QOTHO",
+    "value": 0
+  },
+  {
+    "id": "RHAEGO",
+    "value": 0
+  },
+  {
+    "id": "RICKARD_STARK",
+    "value": 0
+  },
+  {
+    "id": "RYGER_RIVERS",
+    "value": 0
+  },
+  {
+    "id": "SHAGGA",
+    "value": 0
+  },
+  {
+    "id": "STABLE_BOY",
+    "value": 0
+  },
+  {
+    "id": "STEFFON",
+    "value": 0
+  },
+  {
+    "id": "STEVRON_FREY",
+    "value": 0
+  },
+  {
+    "id": "SYRIO_FOREL",
+    "value": 0
+  },
+  {
+    "id": "TOBHO_MOTT",
+    "value": 0
+  },
+  {
+    "id": "TOMARD",
+    "value": 0
+  },
+  {
+    "id": "TYSHA",
+    "value": 0
+  },
+  {
+    "id": "VARLY",
+    "value": 0
+  },
+  {
+    "id": "WAYMAR_ROYCE",
+    "value": 0
+  },
+  {
+    "id": "BARRA",
+    "value": 0
+  },
+  {
+    "id": "BILLY",
+    "value": 0
+  },
+  {
+    "id": "BITER",
+    "value": 0
+  },
+  {
+    "id": "BLACK_LORREN",
+    "value": 0
+  },
+  {
+    "id": "BOROS",
+    "value": 0
+  },
+  {
+    "id": "CAPTAINS_DAUGHTER",
+    "value": 0
+  },
+  {
+    "id": "COLEN",
+    "value": 0
+  },
+  {
+    "id": "DAISY",
+    "value": 0
+  },
+  {
+    "id": "DROWNED_PRIEST",
+    "value": 0
+  },
+  {
+    "id": "FARLEN",
+    "value": 0
+  },
+  {
+    "id": "FATHER_SEAWORTH",
+    "value": 0
+  },
+  {
+    "id": "FREY_DAUGHTER",
+    "value": 0
+  },
+  {
+    "id": "GERARD",
+    "value": 0
+  },
+  {
+    "id": "HARREN",
+    "value": 0
+  },
+  {
+    "id": "HAYLENE",
+    "value": 0
+  },
+  {
+    "id": "JACKS",
+    "value": 0
+  },
+  {
+    "id": "MALAKKO",
+    "value": 0
+  },
+  {
+    "id": "MANDON",
+    "value": 0
+  },
+  {
+    "id": "MARYA",
+    "value": 0
+  },
+  {
+    "id": "PORTAN",
+    "value": 0
+  },
+  {
+    "id": "PROTESTER",
+    "value": 0
+  },
+  {
+    "id": "PYATT_PREE",
+    "value": 0
+  },
+  {
+    "id": "QUAITHE",
+    "value": 0
+  },
+  {
+    "id": "QUENT",
+    "value": 0
+  },
+  {
+    "id": "REGINALD",
+    "value": 0
+  },
+  {
+    "id": "RENNICK",
+    "value": 0
+  },
+  {
+    "id": "RHAENYS",
+    "value": 0
+  },
+  {
+    "id": "SEPTON",
+    "value": 0
+  },
+  {
+    "id": "SILK_KING",
+    "value": 0
+  },
+  {
+    "id": "TICKLER",
+    "value": 0
+  },
+  {
+    "id": "TIMETT",
+    "value": 0
+  },
+  {
+    "id": "TORRHEN",
+    "value": 0
+  },
+  {
+    "id": "VISENYA",
+    "value": 0
+  },
+  {
+    "id": "WINTERFELL_SHEPHERD",
+    "value": 0
+  },
+  {
+    "id": "BALERION",
+    "value": 0
+  },
+  {
+    "id": "BERT",
+    "value": 0
+  },
+  {
+    "id": "ELDRICK",
+    "value": 0
+  },
+  {
+    "id": "FARMER",
+    "value": 0
+  },
+  {
+    "id": "FREY_SEPTON",
+    "value": 0
+  },
+  {
+    "id": "GREIZHEN",
+    "value": 0
+  },
+  {
+    "id": "HOBB",
+    "value": 0
+  },
+  {
+    "id": "MERRY",
+    "value": 0
+  },
+  {
+    "id": "PRENDAHL",
+    "value": 0
+  },
+  {
+    "id": "QHORIN_HALFHAND",
+    "value": 0
+  },
+  {
+    "id": "RADZAI_MO_ERAZ",
+    "value": 0
+  },
+  {
+    "id": "RYLENE",
+    "value": 0
+  },
+  {
+    "id": "SELWYN",
+    "value": 0
+  },
+  {
+    "id": "SORCERER",
+    "value": 0
+  },
+  {
+    "id": "STEELSHANKS_WALTON",
+    "value": 0
+  },
+  {
+    "id": "TARYN_MANT",
+    "value": 0
+  },
+  {
+    "id": "TORTURER",
+    "value": 0
+  },
+  {
+    "id": "VIOLET",
+    "value": 0
+  },
+  {
+    "id": "WILLEM_LANNISTER",
+    "value": 0
+  },
+  {
+    "id": "ADRACK_HUMBLE",
+    "value": 0
+  },
+  {
+    "id": "AXELL_FLORENT",
+    "value": 0
+  },
+  {
+    "id": "BALON_DWARF",
+    "value": 0
+  },
+  {
+    "id": "BLACK_JACK",
+    "value": 0
+  },
+  {
+    "id": "BOLTON_GUARD",
+    "value": 0
+  },
+  {
+    "id": "COOPER",
+    "value": 0
+  },
+  {
+    "id": "DONGO_THE_GIANT",
+    "value": 0
+  },
+  {
+    "id": "DONNEL_WAYNWOOD",
+    "value": 0
+  },
+  {
+    "id": "DORNISH_LORD",
+    "value": 0
+  },
+  {
+    "id": "DYING_MAN",
+    "value": 0
+  },
+  {
+    "id": "ELIA",
+    "value": 0
+  },
+  {
+    "id": "ENDREW",
+    "value": 0
+  },
+  {
+    "id": "FALYSE",
+    "value": 0
+  },
+  {
+    "id": "FOOL",
+    "value": 0
+  },
+  {
+    "id": "GOATHERDS_SON",
+    "value": 0
+  },
+  {
+    "id": "GUYMON",
+    "value": 0
+  },
+  {
+    "id": "HIZDAHRS_FATHER",
+    "value": 0
+  },
+  {
+    "id": "INNKEEPER",
+    "value": 0
+  },
+  {
+    "id": "INNKEEPERS_DAUGHTER",
+    "value": 0
+  },
+  {
+    "id": "KEGS",
+    "value": 0
+  },
+  {
+    "id": "LEAF",
+    "value": 0
+  },
+  {
+    "id": "LHARA",
+    "value": 0
+  },
+  {
+    "id": "LUTHOR",
+    "value": 0
+  },
+  {
+    "id": "MANSERVANT",
+    "value": 0
+  },
+  {
+    "id": "MASTER_MIGHDAL",
+    "value": 0
+  },
+  {
+    "id": "MEEREEN_CHAMPION",
+    "value": 0
+  },
+  {
+    "id": "MEEREEN_SLAVE",
+    "value": 0
+  },
+  {
+    "id": "MOLES_TOWN_MADAM",
+    "value": 0
+  },
+  {
+    "id": "MOLES_TOWN_WHORE",
+    "value": 0
+  },
+  {
+    "id": "MORAG",
+    "value": 0
+  },
+  {
+    "id": "MORGANS_FRIEND",
+    "value": 0
+  },
+  {
+    "id": "MULLY",
+    "value": 0
+  },
+  {
+    "id": "MUSICIAN",
+    "value": 0
+  },
+  {
+    "id": "ORSON",
+    "value": 0
+  },
+  {
+    "id": "ORYS",
+    "value": 0
+  },
+  {
+    "id": "ORYS_BROTHER",
+    "value": 0
+  },
+  {
+    "id": "SALLY",
+    "value": 0
+  },
+  {
+    "id": "TANSY",
+    "value": 0
+  },
+  {
+    "id": "TERNESIO_TERYS",
+    "value": 0
+  },
+  {
+    "id": "THENN_WARG",
+    "value": 0
+  },
+  {
+    "id": "TOMMY",
+    "value": 0
+  },
+  {
+    "id": "VANCE_CORBRAY",
+    "value": 0
+  },
+  {
+    "id": "VIOLA",
+    "value": 0
+  },
+  {
+    "id": "ZALA",
+    "value": 0
+  },
+  {
+    "id": "BLACK_HAIRED_PROSTITUTE",
+    "value": 0
+  },
+  {
+    "id": "BRAND",
+    "value": 0
+  },
+  {
+    "id": "BRIAN",
+    "value": 0
+  },
+  {
+    "id": "CERWYN",
+    "value": 0
+  },
+  {
+    "id": "DENYS",
+    "value": 0
+  },
+  {
+    "id": "DORNISH_RIDER",
+    "value": 0
+  },
+  {
+    "id": "LOBODA",
+    "value": 0
+  },
+  {
+    "id": "LORD_WEEBLY",
+    "value": 0
+  },
+  {
+    "id": "MADAME",
+    "value": 0
+  },
+  {
+    "id": "MAGNAR",
+    "value": 0
+  },
+  {
+    "id": "MALKO",
+    "value": 0
+  },
+  {
+    "id": "MELARA",
+    "value": 0
+  },
+  {
+    "id": "OWNER",
+    "value": 0
+  },
+  {
+    "id": "QUICK",
+    "value": 0
+  },
+  {
+    "id": "RHAENYRA",
+    "value": 0
+  },
+  {
+    "id": "STRONG",
+    "value": 0
+  },
+  {
+    "id": "TANDA",
+    "value": 0
+  },
+  {
+    "id": "WOLKAN",
+    "value": 0
+  },
+  {
+    "id": "AERON",
+    "value": 0
+  },
+  {
+    "id": "ARTHUR_CHILD",
+    "value": 0
+  },
+  {
+    "id": "BELICHO",
+    "value": 0
+  },
+  {
+    "id": "DIM_DALBA",
+    "value": 0
+  },
+  {
+    "id": "DOM",
+    "value": 0
+  },
+  {
+    "id": "DOSH_KHALEEN_LEADER",
+    "value": 0
+  },
+  {
+    "id": "FLYNN",
+    "value": 0
+  },
+  {
+    "id": "GATINS",
+    "value": 0
+  },
+  {
+    "id": "GUARD_CAPTAIN",
+    "value": 0
+  },
+  {
+    "id": "HARALD",
+    "value": 0
+  },
+  {
+    "id": "KHAL_MORO",
+    "value": 0
+  },
+  {
+    "id": "KINVARA",
+    "value": 0
+  },
+  {
+    "id": "LHAZAREEN_WOMAN",
+    "value": 0
+  },
+  {
+    "id": "MAESTER_CITADEL",
+    "value": 0
+  },
+  {
+    "id": "MAESTER_DORNE",
+    "value": 0
+  },
+  {
+    "id": "MAESTER_MORMONT",
+    "value": 0
+  },
+  {
+    "id": "MANDERLY",
+    "value": 0
+  },
+  {
+    "id": "MINISA",
+    "value": 0
+  },
+  {
+    "id": "RAZDAL",
+    "value": 0
+  },
+  {
+    "id": "RED_PRIEST",
+    "value": 0
+  },
+  {
+    "id": "SON_OF_EDMURE",
+    "value": 0
+  },
+  {
+    "id": "SON_OFWALDA",
+    "value": 0
+  },
+  {
+    "id": "TALLA",
+    "value": 0
+  },
+  {
+    "id": "YEZZAN",
+    "value": 0
+  },
+  {
+    "id": "HARRAG",
+    "value": 0
+  },
+  {
+    "id": "NED_UMBER",
+    "value": 0
+  },
+  {
+    "id": "QHONO",
+    "value": 0
+  },
+  {
+    "id": "ALANNA",
+    "value": 0
+  },
+  {
+    "id": "CERSEIS_BABY",
+    "value": 0
+  },
+  {
+    "id": "DORNISH_PRINCE",
+    "value": 0
+  },
+  {
+    "id": "IRONBORN_LORD",
+    "value": 0
+  },
+  {
+    "id": "MARTHA",
+    "value": 0
+  },
+  {
+    "id": "NORA",
+    "value": 0
+  },
+  {
+    "id": "RIVERLANDS_LORD",
+    "value": 0
+  },
+  {
+    "id": "SARRA",
+    "value": 0
+  },
+  {
+    "id": "TEELA",
+    "value": 0
+  },
+  {
+    "id": "UNSULLIED_CAPTAIN",
+    "value": 0
+  },
+  {
+    "id": "VALE_LORD",
+    "value": 0
+  },
+  {
+    "id": "VICKY",
+    "value": 0
+  },
+  {
+    "id": "WILLA",
+    "value": 0
+  },
+  {
+    "id": "WILLIAM",
+    "value": 0
+  }
+]

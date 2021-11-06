@@ -47,6 +47,11 @@ const menuData = [
     path: '/wallet',
     text: 'Wallet',
     icon: 'icon-licai'
+  },
+  {
+    path: '/tests',
+    text: 'Tests',
+    icon: 'icon-ceshi'
   }
 ]
 

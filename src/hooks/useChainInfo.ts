@@ -8,7 +8,7 @@ export const DEFAULT_DECIMALS = registry.createType('u32', 12)
 export const DEFAULT_SS58 = registry.createType('u32', addressDefaults.prefix)
 
 async function retrieve(api) {
-  const [systemChainType, chainProperties, systemChain, systemName, systemVersion] = await Promise.all([api.rpc.system.chainType ? api.rpc.system.chainType() : Promise.resolve(registry.createType('ChainType', 'Live')), api.rpc.system.properties(), api.rpc.system.chain(), api.rpc.system.name(), api.rpc.system.version()])
+  const [systemChainType, chainProperties, systemChain, systemName, systemVersion, confirmationPeriod] = await Promise.all([api.rpc.system.chainType ? api.rpc.system.chainType() : Promise.resolve(registry.createType('ChainType', 'Live')), api.rpc.system.properties(), api.rpc.system.chain(), api.rpc.system.name(), api.rpc.system.version(), api.consts.zdRefreshReputation.confirmationPeriod.toNumber()])
 
   return {
     systemChainType,
@@ -17,12 +17,18 @@ async function retrieve(api) {
     tokenSymbolArr: chainProperties.tokenSymbol,
     systemChain: (systemChain || '<unknown>').toString(),
     systemName: systemName.toString(),
-    systemVersion: systemVersion.toString()
+    systemVersion: systemVersion.toString(),
+    confirmationPeriod
   }
 }
 
+export async function bestNumber(api) {
+  const blocklNumber = await api.derive.chain.bestNumber
+  return blocklNumber.toNumber()
+}
+
 export async function loadInfo(api) {
-  const { systemChainType, ss58Format, systemChain, tokenSymbolArr, systemName, tokenDecimal, systemVersion } = await retrieve(api)
+  const { systemChainType, ss58Format, systemChain, tokenSymbolArr, systemName, tokenDecimal, systemVersion, confirmationPeriod } = await retrieve(api)
   const isDevelopment = systemChainType.isDevelopment || systemChainType.isLocal || isTestChain(systemChain)
   const tokenSymbol = tokenSymbolArr.unwrapOr([formatBalance.getDefaults().unit])[0].toString()
 
@@ -40,6 +46,7 @@ export async function loadInfo(api) {
     isDevelopment,
     ss58Format,
     tokenSymbol,
-    tokenDecimal
+    tokenDecimal,
+    confirmationPeriod
   }
 }

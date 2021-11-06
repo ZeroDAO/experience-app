@@ -1,0 +1,2037 @@
+[
+  {
+    "id": "TYRION",
+    "label": "Tyrion",
+    "reputation": 207.94796576185027
+  },
+  {
+    "id": "JON",
+    "label": "Jon",
+    "reputation": 205.96383877772325
+  },
+  {
+    "id": "DAENERYS",
+    "label": "Daenerys",
+    "reputation": 204.95305710656422
+  },
+  {
+    "id": "BRAN",
+    "label": "Bran",
+    "reputation": 202.72123738934184
+  },
+  {
+    "id": "JORAH",
+    "label": "Jorah",
+    "reputation": 202.7212373893418
+  },
+  {
+    "id": "SANSA",
+    "label": "Sansa",
+    "reputation": 202.54438589018525
+  },
+  {
+    "id": "ARYA",
+    "label": "Arya",
+    "reputation": 202.0818512000835
+  },
+  {
+    "id": "VARYS",
+    "label": "Varys",
+    "reputation": 195.75975714507018
+  },
+  {
+    "id": "DAVOS",
+    "label": "Davos",
+    "reputation": 195.459637097051
+  },
+  {
+    "id": "BRIENNE",
+    "label": "Brienne",
+    "reputation": 195.2041294886022
+  },
+  {
+    "id": "CATELYN",
+    "label": "Catelyn",
+    "reputation": 177.56568706420765
+  },
+  {
+    "id": "ROBB",
+    "label": "Robb",
+    "reputation": 177.56568706420765
+  },
+  {
+    "id": "THEON",
+    "label": "Theon",
+    "reputation": 172.4182070863115
+  },
+  {
+    "id": "HOUND",
+    "label": "Sandor",
+    "reputation": 166.57906129770765
+  },
+  {
+    "id": "JAIME",
+    "label": "Jaime",
+    "reputation": 155.3587233601611
+  },
+  {
+    "id": "ROBERT",
+    "label": "Robert",
+    "reputation": 152.32216794855242
+  },
+  {
+    "id": "GENDRY",
+    "label": "Gendry",
+    "reputation": 152.0851465127329
+  },
+  {
+    "id": "NED",
+    "label": "Ned",
+    "reputation": 148.1539223583253
+  },
+  {
+    "id": "CERSEI",
+    "label": "Cersei",
+    "reputation": 144.83993086292506
+  },
+  {
+    "id": "GREY_WORM",
+    "label": "Grey Worm",
+    "reputation": 144.51863060842902
+  },
+  {
+    "id": "JOFFREY",
+    "label": "Joffrey",
+    "reputation": 132.91942999235533
+  },
+  {
+    "id": "LITTLEFINGER",
+    "label": "Petyr",
+    "reputation": 131.94660026865026
+  },
+  {
+    "id": "TYWIN",
+    "label": "Tywin",
+    "reputation": 131.39999208898885
+  },
+  {
+    "id": "TORMUND",
+    "label": "Tormund",
+    "reputation": 124.80588244835698
+  },
+  {
+    "id": "JANOS",
+    "label": "Janos",
+    "reputation": 117.88290341411499
+  },
+  {
+    "id": "SAM",
+    "label": "Sam",
+    "reputation": 116.51371090048539
+  },
+  {
+    "id": "EURON",
+    "label": "Euron",
+    "reputation": 107.36196026233904
+  },
+  {
+    "id": "MISSANDEI",
+    "label": "Missandei",
+    "reputation": 106.76663495972241
+  },
+  {
+    "id": "OLENNA",
+    "label": "Olenna",
+    "reputation": 100.41368901158921
+  },
+  {
+    "id": "PODRICK",
+    "label": "Podrick",
+    "reputation": 97.97002144249647
+  },
+  {
+    "id": "STANNIS",
+    "label": "Stannis",
+    "reputation": 96.00941444559768
+  },
+  {
+    "id": "PYCELLE",
+    "label": "Pycelle",
+    "reputation": 91.36646868559576
+  },
+  {
+    "id": "AERYS",
+    "label": "Aerys",
+    "reputation": 89.51114373863527
+  },
+  {
+    "id": "LYANNA_MORMONT",
+    "label": "Lyanna Mormont",
+    "reputation": 88.69373121511015
+  },
+  {
+    "id": "MERYN_TRANT",
+    "label": "Meryn",
+    "reputation": 83.28192272849378
+  },
+  {
+    "id": "MELISANDRE",
+    "label": "Melisandre",
+    "reputation": 82.72783181757582
+  },
+  {
+    "id": "MOUNTAIN",
+    "label": "Gregor",
+    "reputation": 81.89675606010877
+  },
+  {
+    "id": "BRONN",
+    "label": "Bronn",
+    "reputation": 80.2870594983063
+  },
+  {
+    "id": "LORAS",
+    "label": "Loras",
+    "reputation": 79.9474146189952
+  },
+  {
+    "id": "MARGAERY",
+    "label": "Margaery",
+    "reputation": 79.9474146189952
+  },
+  {
+    "id": "TOMMEN",
+    "label": "Tommen",
+    "reputation": 79.79188824863508
+  },
+  {
+    "id": "BARRISTAN",
+    "label": "Barristan",
+    "reputation": 74.47314583079424
+  },
+  {
+    "id": "ROOSE_BOLTON",
+    "label": "Roose",
+    "reputation": 73.63137041475223
+  },
+  {
+    "id": "RAMSAY",
+    "label": "Ramsay",
+    "reputation": 72.67652216573191
+  },
+  {
+    "id": "RICKON",
+    "label": "Rickon",
+    "reputation": 72.5073918338982
+  },
+  {
+    "id": "BERIC",
+    "label": "Beric",
+    "reputation": 71.48108275410304
+  },
+  {
+    "id": "EDDISON_TOLLETT",
+    "label": "Eddison",
+    "reputation": 70.80671156178936
+  },
+  {
+    "id": "YOREN",
+    "label": "Yoren",
+    "reputation": 70.1780440491059
+  },
+  {
+    "id": "DICKON",
+    "label": "Dickon",
+    "reputation": 69.07968503720738
+  },
+  {
+    "id": "RANDYLL",
+    "label": "Randyll",
+    "reputation": 68.73336469088704
+  },
+  {
+    "id": "YARA",
+    "label": "Yara",
+    "reputation": 68.62899802659042
+  },
+  {
+    "id": "BENJEN",
+    "label": "Benjen",
+    "reputation": 67.2821979449404
+  },
+  {
+    "id": "RODRIK",
+    "label": "Rodrik",
+    "reputation": 65.39334150954838
+  },
+  {
+    "id": "JEOR",
+    "label": "Jeor",
+    "reputation": 64.96687708295019
+  },
+  {
+    "id": "SHAE",
+    "label": "Shae",
+    "reputation": 64.23448830165559
+  },
+  {
+    "id": "MAESTER_WOLKAN",
+    "label": "Wolkan",
+    "reputation": 61.731236785421615
+  },
+  {
+    "id": "QYBURN",
+    "label": "Qyburn",
+    "reputation": 60.630215417386644
+  },
+  {
+    "id": "OBERYN",
+    "label": "Oberyn",
+    "reputation": 59.367041763855504
+  },
+  {
+    "id": "KEVAN",
+    "label": "Kevan",
+    "reputation": 58.885927958813475
+  },
+  {
+    "id": "MACE",
+    "label": "Mac",
+    "reputation": 58.885927958813475
+  },
+  {
+    "id": "MYRCELLA",
+    "label": "Myrcella",
+    "reputation": 58.885927958813475
+  },
+  {
+    "id": "ELLARIA",
+    "label": "Ellaria",
+    "reputation": 58.885927958813475
+  },
+  {
+    "id": "MYRANDA",
+    "label": "Myranda",
+    "reputation": 55.71291580344539
+  },
+  {
+    "id": "JORY_CASSEL",
+    "label": "Jory",
+    "reputation": 52.06574715650611
+  },
+  {
+    "id": "LYANNA",
+    "label": "Lyanna",
+    "reputation": 51.73006514213375
+  },
+  {
+    "id": "ROS",
+    "label": "Ros",
+    "reputation": 50.11095431217663
+  },
+  {
+    "id": "GILLY",
+    "label": "Gilly",
+    "reputation": 49.88124744669297
+  },
+  {
+    "id": "ALLISER_THORNE",
+    "label": "Allister",
+    "reputation": 49.596293039398134
+  },
+  {
+    "id": "GRENN",
+    "label": "Grenn",
+    "reputation": 49.596293039398134
+  },
+  {
+    "id": "MAESTER_AEMON",
+    "label": "Aemon",
+    "reputation": 49.596293039398134
+  },
+  {
+    "id": "PYP",
+    "label": "Pyp",
+    "reputation": 49.596293039398134
+  },
+  {
+    "id": "CRASTER",
+    "label": "Craster",
+    "reputation": 49.596293039398134
+  },
+  {
+    "id": "OLLY",
+    "label": "Olly",
+    "reputation": 49.596293039398134
+  },
+  {
+    "id": "YOHN_ROYCE",
+    "label": "Yohn Royce",
+    "reputation": 47.93347059184072
+  },
+  {
+    "id": "SEPTA_MORDANE",
+    "label": "Septa Mordane",
+    "reputation": 46.90026155992894
+  },
+  {
+    "id": "WALDER",
+    "label": "Walder",
+    "reputation": 44.51788496195175
+  },
+  {
+    "id": "THOROS",
+    "label": "Thoros",
+    "reputation": 43.41985826430711
+  },
+  {
+    "id": "HIGH_SPARROW",
+    "label": "High Sparrow",
+    "reputation": 43.058793774144014
+  },
+  {
+    "id": "ROBETT",
+    "label": "Robett",
+    "reputation": 42.745487071993445
+  },
+  {
+    "id": "LANCEL",
+    "label": "Lancel",
+    "reputation": 42.33724384285403
+  },
+  {
+    "id": "LYSA",
+    "label": "Lysa",
+    "reputation": 40.77760098109644
+  },
+  {
+    "id": "ROBIN",
+    "label": "Robin",
+    "reputation": 40.77760098109644
+  },
+  {
+    "id": "NIGHT_KING",
+    "label": "Night King",
+    "reputation": 40.777553722290776
+  },
+  {
+    "id": "LOCKE",
+    "label": "Locke",
+    "reputation": 39.76586688188608
+  },
+  {
+    "id": "DAARIO",
+    "label": "Daario",
+    "reputation": 39.73920566716286
+  },
+  {
+    "id": "HIZDAHR",
+    "label": "Hizdahr",
+    "reputation": 37.89150117656158
+  },
+  {
+    "id": "BALON",
+    "label": "Balon",
+    "reputation": 37.46530928547853
+  },
+  {
+    "id": "OSHA",
+    "label": "Osha",
+    "reputation": 36.79427846786135
+  },
+  {
+    "id": "GREATJON_UMBER",
+    "label": "Greatjon",
+    "reputation": 36.065432272513604
+  },
+  {
+    "id": "MAESTER_LUWIN",
+    "label": "Luwin",
+    "reputation": 36.03996754116652
+  },
+  {
+    "id": "RENLY",
+    "label": "Renly",
+    "reputation": 35.57940911013018
+  },
+  {
+    "id": "BLACK_LORREN",
+    "label": "Black Lorren",
+    "reputation": 35.52782445716095
+  },
+  {
+    "id": "CAPTAINS_DAUGHTER",
+    "label": "Captain's Daughter",
+    "reputation": 35.52782445716095
+  },
+  {
+    "id": "DAGMER",
+    "label": "Dagmer",
+    "reputation": 35.52782445716095
+  },
+  {
+    "id": "TORTURER",
+    "label": "Torturer",
+    "reputation": 35.52782445716095
+  },
+  {
+    "id": "VIOLET",
+    "label": "Violet",
+    "reputation": 35.52782445716095
+  },
+  {
+    "id": "RALF",
+    "label": "Ralf",
+    "reputation": 35.52782445716095
+  },
+  {
+    "id": "HARRAG",
+    "label": "Harrag",
+    "reputation": 35.52782445716095
+  },
+  {
+    "id": "THREE_EYED_RAVEN",
+    "label": "Three Eyed Raven",
+    "reputation": 35.12968285085246
+  },
+  {
+    "id": "MARWYN",
+    "label": "Marwin",
+    "reputation": 34.46122347818308
+  },
+  {
+    "id": "JON_ARRYN",
+    "label": "Jon Arryn",
+    "reputation": 34.43616645058166
+  },
+  {
+    "id": "TOBHO_MOTT",
+    "label": "Tobho Mott",
+    "reputation": 33.769233010538976
+  },
+  {
+    "id": "ARTHUR",
+    "label": "Arthur",
+    "reputation": 33.769233010538976
+  },
+  {
+    "id": "MELESSA",
+    "label": "Melessa",
+    "reputation": 33.69180787105264
+  },
+  {
+    "id": "LITTLE_SAM",
+    "label": "Little Sam",
+    "reputation": 33.69180787105264
+  },
+  {
+    "id": "JOJEN",
+    "label": "Jojen",
+    "reputation": 33.678475769554474
+  },
+  {
+    "id": "RAST",
+    "label": "Rast",
+    "reputation": 32.71756257998106
+  },
+  {
+    "id": "MAESTER_CITADEL",
+    "label": "Citadel Maester",
+    "reputation": 31.90039174001387
+  },
+  {
+    "id": "ANGUY",
+    "label": "Anguy",
+    "reputation": 27.190949423626336
+  },
+  {
+    "id": "LADY_CRANE",
+    "label": "Lady Crane",
+    "reputation": 26.94291429924057
+  },
+  {
+    "id": "AMORY",
+    "label": "Amory",
+    "reputation": 26.754085039264005
+  },
+  {
+    "id": "POLLIVER",
+    "label": "Polliver",
+    "reputation": 26.713166337147598
+  },
+  {
+    "id": "DYING_MAN",
+    "label": "Dying Man",
+    "reputation": 26.713166337147598
+  },
+  {
+    "id": "FARMER_HAMLET",
+    "label": "Hamlet Farmer",
+    "reputation": 26.713166337147598
+  },
+  {
+    "id": "TYCHO",
+    "label": "Tycho",
+    "reputation": 26.692161455601287
+  },
+  {
+    "id": "HOT_PIE",
+    "label": "Hot Pie",
+    "reputation": 26.603814159926916
+  },
+  {
+    "id": "DONTOS",
+    "label": "Dontos",
+    "reputation": 26.36788077413269
+  },
+  {
+    "id": "SYRIO_FOREL",
+    "label": "Syrio",
+    "reputation": 26.132214156523553
+  },
+  {
+    "id": "JAQEN",
+    "label": "Jaqen",
+    "reputation": 26.132214156523553
+  },
+  {
+    "id": "RORGE",
+    "label": "Rorge",
+    "reputation": 26.132214156523553
+  },
+  {
+    "id": "TERNESIO_TERYS",
+    "label": "Ternesio Terys",
+    "reputation": 26.132214156523553
+  },
+  {
+    "id": "THIN_MAN",
+    "label": "Thin Man",
+    "reputation": 26.132214156523553
+  },
+  {
+    "id": "WAIF",
+    "label": "Waif",
+    "reputation": 26.132214156523553
+  },
+  {
+    "id": "BIANCA",
+    "label": "Bianca",
+    "reputation": 26.132214156523553
+  },
+  {
+    "id": "NORA",
+    "label": "Nora",
+    "reputation": 26.132214156523553
+  },
+  {
+    "id": "VICKY",
+    "label": "Vicky",
+    "reputation": 26.132214156523553
+  },
+  {
+    "id": "ANYA_WAYNWOOD",
+    "label": "Anya Waynwood",
+    "reputation": 25.84645778247604
+  },
+  {
+    "id": "MOSSADOR",
+    "label": "Mossador",
+    "reputation": 25.179911788608464
+  },
+  {
+    "id": "TYENE",
+    "label": "Tyene",
+    "reputation": 25.1776796564404
+  },
+  {
+    "id": "HIGH_SEPTON",
+    "label": "High Septon",
+    "reputation": 24.88782458397663
+  },
+  {
+    "id": "MAGGY",
+    "label": "Maggy",
+    "reputation": 24.88782458397663
+  },
+  {
+    "id": "MELARA",
+    "label": "Melara",
+    "reputation": 24.88782458397663
+  },
+  {
+    "id": "SEPTA_UNELLA",
+    "label": "Septa Unella",
+    "reputation": 24.88782458397663
+  },
+  {
+    "id": "HARRY",
+    "label": "Harry",
+    "reputation": 24.88782458397663
+  },
+  {
+    "id": "BRYNDEN",
+    "label": "Brynden",
+    "reputation": 23.92357412226527
+  },
+  {
+    "id": "EDMURE",
+    "label": "Edmure",
+    "reputation": 23.92357412226527
+  },
+  {
+    "id": "ALTON",
+    "label": "Alton",
+    "reputation": 23.639853599152946
+  },
+  {
+    "id": "DROGO",
+    "label": "Drogo",
+    "reputation": 23.55445336077466
+  },
+  {
+    "id": "IRRI",
+    "label": "Irri",
+    "reputation": 23.55445336077466
+  },
+  {
+    "id": "RAKHARO",
+    "label": "Rakharo",
+    "reputation": 23.55445336077466
+  },
+  {
+    "id": "VISERYS",
+    "label": "Viserys",
+    "reputation": 23.55445336077466
+  },
+  {
+    "id": "WINE_MERCHANT",
+    "label": "Wine Merchant",
+    "reputation": 23.55445336077466
+  },
+  {
+    "id": "KOVARRO",
+    "label": "Kovarro",
+    "reputation": 23.55445336077466
+  },
+  {
+    "id": "XARO",
+    "label": "Xaro",
+    "reputation": 23.55445336077466
+  },
+  {
+    "id": "YGRITTE",
+    "label": "Ygritte",
+    "reputation": 23.51919553372919
+  },
+  {
+    "id": "DOREAH",
+    "label": "Doreah",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "ILLYRIO",
+    "label": "Illyrio",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "MIRRI_MAZ_DUUR",
+    "label": "Mirri Maz Dur",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "QOTHO",
+    "label": "Qotho",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "RHAEGO",
+    "label": "Rhaego",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "PYATT_PREE",
+    "label": "Pyatt Pree",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "SPICE_KING",
+    "label": "Spice King",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "KRAZNYS_MO_NAKLOZ",
+    "label": "Kraznys",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "MERO",
+    "label": "Mero",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "RADZAI_MO_ERAZ",
+    "label": "Radzai",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "FENNESZ",
+    "label": "Fennesz",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "KHAL_MORO",
+    "label": "Khal Moro",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "LHAZAREEN_WOMAN",
+    "label": "Lhazareen Woman",
+    "reputation": 22.734963341633282
+  },
+  {
+    "id": "BLACK_WALDER",
+    "label": "Black Walder",
+    "reputation": 22.547692070526864
+  },
+  {
+    "id": "LOTHAR",
+    "label": "Lothar",
+    "reputation": 22.547692070526864
+  },
+  {
+    "id": "OTHELL_YARWYCK",
+    "label": "Othell",
+    "reputation": 21.535068549602208
+  },
+  {
+    "id": "MANCE",
+    "label": "Mance",
+    "reputation": 21.535068549602208
+  },
+  {
+    "id": "QHORIN",
+    "label": "Quorin",
+    "reputation": 21.535068549602208
+  },
+  {
+    "id": "LORD_OF_BONES",
+    "label": "Lord of Bones",
+    "reputation": 21.535068549602208
+  },
+  {
+    "id": "KARL_TANNER",
+    "label": "Karl",
+    "reputation": 21.535068549602208
+  },
+  {
+    "id": "ORELL",
+    "label": "Orell",
+    "reputation": 21.535068549602208
+  },
+  {
+    "id": "KARSI",
+    "label": "Karsi",
+    "reputation": 21.535068549602208
+  },
+  {
+    "id": "LOBODA",
+    "label": "Loboda",
+    "reputation": 21.535068549602208
+  },
+  {
+    "id": "WUN_WUN",
+    "label": "Wun Wun",
+    "reputation": 21.535068549602208
+  },
+  {
+    "id": "AREO",
+    "label": "Areo",
+    "reputation": 21.352842589232367
+  },
+  {
+    "id": "TRYSTANE",
+    "label": "Trystane",
+    "reputation": 21.006522242912023
+  },
+  {
+    "id": "STEELSHANKS_WALTON",
+    "label": "Steelshanks Walton",
+    "reputation": 21.006522242912023
+  },
+  {
+    "id": "DORAN",
+    "label": "Doran",
+    "reputation": 21.006522242912023
+  },
+  {
+    "id": "MALKO",
+    "label": "Malko",
+    "reputation": 19.903251413924032
+  },
+  {
+    "id": "YEZZAN",
+    "label": "Yezzan",
+    "reputation": 19.66044989079906
+  },
+  {
+    "id": "MORD",
+    "label": "Mord",
+    "reputation": 19.173777234315082
+  },
+  {
+    "id": "SHAGGA",
+    "label": "Shagga",
+    "reputation": 19.173777234315082
+  },
+  {
+    "id": "HAYLENE",
+    "label": "Haylene",
+    "reputation": 19.173777234315082
+  },
+  {
+    "id": "BLACK_HAIRED_PROSTITUTE",
+    "label": "Strumpet",
+    "reputation": 19.173777234315082
+  },
+  {
+    "id": "KINVARA",
+    "label": "Kinvara",
+    "reputation": 19.173777234315082
+  },
+  {
+    "id": "RAZDAL",
+    "label": "Razdal",
+    "reputation": 19.173777234315082
+  },
+  {
+    "id": "SHIREEN",
+    "label": "Shireen",
+    "reputation": 8.60622341042968
+  },
+  {
+    "id": "HODOR",
+    "label": "Hodor",
+    "reputation": 8.405289571998527
+  },
+  {
+    "id": "MEERA",
+    "label": "Meera",
+    "reputation": 8.405289571998527
+  },
+  {
+    "id": "AEGON",
+    "label": "Aegon",
+    "reputation": 7.734682458148347
+  },
+  {
+    "id": "SELYSE",
+    "label": "Selyse",
+    "reputation": 7.606528660734929
+  },
+  {
+    "id": "MATTHOS",
+    "label": "Matthos",
+    "reputation": 7.449756085484093
+  },
+  {
+    "id": "MHAEGEN",
+    "label": "Mhaegen",
+    "reputation": 7.437963879500874
+  },
+  {
+    "id": "HOWLAND",
+    "label": "Howland",
+    "reputation": 6.753846602107795
+  },
+  {
+    "id": "RAY",
+    "label": "Ray",
+    "reputation": 6.406886972988756
+  },
+  {
+    "id": "QUAITHE",
+    "label": "Quaithe",
+    "reputation": 6.3350386684169315
+  },
+  {
+    "id": "RICKARD_KARSTARK",
+    "label": "Rickard Karstark",
+    "reputation": 6.323709651186314
+  },
+  {
+    "id": "CRESSEN",
+    "label": "Cressen",
+    "reputation": 6.264886234533679
+  },
+  {
+    "id": "SALLADHOR",
+    "label": "Salladhor",
+    "reputation": 6.108113659282844
+  },
+  {
+    "id": "STYR",
+    "label": "Styr",
+    "reputation": 6.01899242784623
+  },
+  {
+    "id": "OLD_NAN",
+    "label": "Old Nan",
+    "reputation": 5.9623893349806405
+  },
+  {
+    "id": "LEAF",
+    "label": "Leaf",
+    "reputation": 5.9623893349806405
+  },
+  {
+    "id": "WALDA",
+    "label": "Walda",
+    "reputation": 5.763448399785778
+  },
+  {
+    "id": "VALA",
+    "label": "Vala",
+    "reputation": 5.757639916031476
+  },
+  {
+    "id": "MARTHA",
+    "label": "Martha",
+    "reputation": 5.757639916031476
+  },
+  {
+    "id": "TALLA",
+    "label": "Talla",
+    "reputation": 5.6153013118421065
+  },
+  {
+    "id": "TALISA",
+    "label": "Talisa",
+    "reputation": 5.485329702294235
+  },
+  {
+    "id": "SALLY",
+    "label": "Sally",
+    "reputation": 5.342633267429519
+  },
+  {
+    "id": "HOSTER",
+    "label": "Hoster",
+    "reputation": 5.073305344691647
+  },
+  {
+    "id": "VARDIS_EGEN",
+    "label": "Vardis",
+    "reputation": 5.073305344691647
+  },
+  {
+    "id": "GOATHERD",
+    "label": "Goatherd",
+    "reputation": 4.964876388719615
+  },
+  {
+    "id": "BITER",
+    "label": "Biter",
+    "reputation": 4.35536902608726
+  },
+  {
+    "id": "MARILLION",
+    "label": "Marillion",
+    "reputation": 4.2877235481404945
+  },
+  {
+    "id": "MYCAH",
+    "label": "Mycah",
+    "reputation": 4.2877235481404945
+  },
+  {
+    "id": "NYMERIA",
+    "label": "Nymeria",
+    "reputation": 4.14615895745498
+  },
+  {
+    "id": "DAREON",
+    "label": "Dareon",
+    "reputation": 4.060429817684387
+  },
+  {
+    "id": "RHAEGAR",
+    "label": "Rhaegar",
+    "reputation": 3.979235780164135
+  },
+  {
+    "id": "MAGO",
+    "label": "Mago",
+    "reputation": 3.925742226795777
+  },
+  {
+    "id": "DAISY",
+    "label": "Daisy",
+    "reputation": 3.8546887932443568
+  },
+  {
+    "id": "PRENDAHL",
+    "label": "Prendahl",
+    "reputation": 3.789160556938882
+  },
+  {
+    "id": "TANSY",
+    "label": "Tansy",
+    "reputation": 3.6338261082865957
+  },
+  {
+    "id": "SMALLJON",
+    "label": "Smalljon",
+    "reputation": 3.6338261082865957
+  },
+  {
+    "id": "SON_OFWALDA",
+    "label": "Roose's Son",
+    "reputation": 3.6338261082865957
+  },
+  {
+    "id": "MAREI",
+    "label": "Marei",
+    "reputation": 3.3807625421923992
+  },
+  {
+    "id": "LOMMY_GREENHANDS",
+    "label": "Lommy",
+    "reputation": 3.3254767699908645
+  },
+  {
+    "id": "LOMMY",
+    "label": "Lommy",
+    "reputation": 3.3254767699908645
+  },
+  {
+    "id": "ELIA",
+    "label": "Elia",
+    "reputation": 3.298168986880862
+  },
+  {
+    "id": "MORGAN",
+    "label": "Morgan",
+    "reputation": 3.298168986880862
+  },
+  {
+    "id": "LOLLYS",
+    "label": "Lollys",
+    "reputation": 3.211482379932252
+  },
+  {
+    "id": "DORNISH_RIDER",
+    "label": "Dornish Rider",
+    "reputation": 3.211482379932252
+  },
+  {
+    "id": "LEM",
+    "label": "Lem",
+    "reputation": 3.1014184474505084
+  },
+  {
+    "id": "OLYVAR",
+    "label": "Olyvar",
+    "reputation": 3.0902903042037617
+  },
+  {
+    "id": "MOLES_TOWN_WHORE",
+    "label": "Mole's Town Whore",
+    "reputation": 2.62532881298384
+  },
+  {
+    "id": "OBARA",
+    "label": "Obara",
+    "reputation": 2.5602577373397164
+  },
+  {
+    "id": "BOBONO",
+    "label": "Bobono",
+    "reputation": 2.0725318691723515
+  },
+  {
+    "id": "CAMELLO",
+    "label": "Camello",
+    "reputation": 2.0725318691723515
+  },
+  {
+    "id": "CLARENZO",
+    "label": "Clarenzo",
+    "reputation": 2.0725318691723515
+  },
+  {
+    "id": "IZEMBARO",
+    "label": "Izembaro",
+    "reputation": 2.0725318691723515
+  },
+  {
+    "id": "MAG_THE_MIGHTY",
+    "label": "Mag the Mighty",
+    "reputation": 1.9577335045092912
+  },
+  {
+    "id": "SISSY",
+    "label": "Sissy",
+    "reputation": 1.9577335045092912
+  },
+  {
+    "id": "ROSLIN",
+    "label": "Roslin",
+    "reputation": 1.2591354801192245
+  },
+  {
+    "id": "MORGANS_FRIEND",
+    "label": "Morgan's Friend",
+    "reputation": 0.6596337973761723
+  },
+  {
+    "id": "CRAYAH",
+    "label": "Crayah",
+    "reputation": 0.5634604236987333
+  },
+  {
+    "id": "MARTYN",
+    "label": "Martyn",
+    "reputation": 0.5485329702294236
+  },
+  {
+    "id": "CRASTERS_BABY",
+    "label": "Baby",
+    "reputation": 0.27967621492989875
+  },
+  {
+    "id": "DIRAH",
+    "label": "Dirah",
+    "reputation": 0.10331358254820937
+  },
+  {
+    "id": "WHITE_WALKER",
+    "label": "White Walker",
+    "reputation": 0.02576788291074005
+  },
+  {
+    "id": "ADDAM_MARBRAND",
+    "label": "Addam",
+    "reputation": 0
+  },
+  {
+    "id": "ASSASSIN",
+    "label": "Assassin",
+    "reputation": 0
+  },
+  {
+    "id": "BAELOR",
+    "label": "Baelor",
+    "reputation": 0
+  },
+  {
+    "id": "BORCAS",
+    "label": "Borcas",
+    "reputation": 0
+  },
+  {
+    "id": "BOWEN_MARSH",
+    "label": "Bowen",
+    "reputation": 0
+  },
+  {
+    "id": "BRANDON_STARK",
+    "label": "Brandon",
+    "reputation": 0
+  },
+  {
+    "id": "COHOLLO",
+    "label": "Cohollo",
+    "reputation": 0
+  },
+  {
+    "id": "GALBART_GLOVER",
+    "label": "Galbart",
+    "reputation": 0
+  },
+  {
+    "id": "GARED",
+    "label": "Gared",
+    "reputation": 0
+  },
+  {
+    "id": "HUGH_OF_THE_VALE",
+    "label": "Hugh of the Vale",
+    "reputation": 0
+  },
+  {
+    "id": "ILYN_PAYNE",
+    "label": "Ilyn",
+    "reputation": 0
+  },
+  {
+    "id": "IROGENIA",
+    "label": "Irogenia",
+    "reputation": 0
+  },
+  {
+    "id": "JAREMY_RYKKER",
+    "label": "Jaremy",
+    "reputation": 0
+  },
+  {
+    "id": "JHIQUI",
+    "label": "Jhiqui",
+    "reputation": 0
+  },
+  {
+    "id": "JOANNA",
+    "label": "Joanna",
+    "reputation": 0
+  },
+  {
+    "id": "JONOS_BRACKEN",
+    "label": "Jonos",
+    "reputation": 0
+  },
+  {
+    "id": "JOYEUSE",
+    "label": "Joyeuse",
+    "reputation": 0
+  },
+  {
+    "id": "LEO_LEFFORD",
+    "label": "Leo",
+    "reputation": 0
+  },
+  {
+    "id": "LITTLE_BIRD",
+    "label": "Little Bird",
+    "reputation": 0
+  },
+  {
+    "id": "LUKE",
+    "label": "Luke",
+    "reputation": 0
+  },
+  {
+    "id": "MASHA_HEDDLE",
+    "label": "Masha",
+    "reputation": 0
+  },
+  {
+    "id": "OTHOR",
+    "label": "Othor",
+    "reputation": 0
+  },
+  {
+    "id": "RICKARD_STARK",
+    "label": "Rickard Stark",
+    "reputation": 0
+  },
+  {
+    "id": "ROYCE",
+    "label": "Royce",
+    "reputation": 0
+  },
+  {
+    "id": "RYGER_RIVERS",
+    "label": "Ryger",
+    "reputation": 0
+  },
+  {
+    "id": "STABLE_BOY",
+    "label": "Stable Boy",
+    "reputation": 0
+  },
+  {
+    "id": "STEFFON",
+    "label": "Steffon",
+    "reputation": 0
+  },
+  {
+    "id": "STEVRON_FREY",
+    "label": "Stevron",
+    "reputation": 0
+  },
+  {
+    "id": "TOMARD",
+    "label": "Tomard",
+    "reputation": 0
+  },
+  {
+    "id": "TYSHA",
+    "label": "Tysha",
+    "reputation": 0
+  },
+  {
+    "id": "VARLY",
+    "label": "Varly",
+    "reputation": 0
+  },
+  {
+    "id": "WAYMAR_ROYCE",
+    "label": "Waymar",
+    "reputation": 0
+  },
+  {
+    "id": "WILL",
+    "label": "Will",
+    "reputation": 0
+  },
+  {
+    "id": "BARRA",
+    "label": "Barra",
+    "reputation": 0
+  },
+  {
+    "id": "BILLY",
+    "label": "Billy",
+    "reputation": 0
+  },
+  {
+    "id": "BOROS",
+    "label": "Boros",
+    "reputation": 0
+  },
+  {
+    "id": "COLEN",
+    "label": "Colen",
+    "reputation": 0
+  },
+  {
+    "id": "DROWNED_PRIEST",
+    "label": "Drowned Priest",
+    "reputation": 0
+  },
+  {
+    "id": "FARLEN",
+    "label": "Farlen",
+    "reputation": 0
+  },
+  {
+    "id": "FATHER_SEAWORTH",
+    "label": "Father Seaworth",
+    "reputation": 0
+  },
+  {
+    "id": "FREY_DAUGHTER",
+    "label": "Frey Daughter",
+    "reputation": 0
+  },
+  {
+    "id": "GERARD",
+    "label": "Gerard",
+    "reputation": 0
+  },
+  {
+    "id": "HARREN",
+    "label": "Harren",
+    "reputation": 0
+  },
+  {
+    "id": "JACKS",
+    "label": "Jacks",
+    "reputation": 0
+  },
+  {
+    "id": "MALAKKO",
+    "label": "Malakko",
+    "reputation": 0
+  },
+  {
+    "id": "MANDON",
+    "label": "Mandon",
+    "reputation": 0
+  },
+  {
+    "id": "MARYA",
+    "label": "Marya",
+    "reputation": 0
+  },
+  {
+    "id": "PORTAN",
+    "label": "Portan",
+    "reputation": 0
+  },
+  {
+    "id": "PROTESTER",
+    "label": "Protester",
+    "reputation": 0
+  },
+  {
+    "id": "QUENT",
+    "label": "Quent",
+    "reputation": 0
+  },
+  {
+    "id": "REGINALD",
+    "label": "Reginald",
+    "reputation": 0
+  },
+  {
+    "id": "RENNICK",
+    "label": "Rennick",
+    "reputation": 0
+  },
+  {
+    "id": "RHAENYS",
+    "label": "Rhaenys",
+    "reputation": 0
+  },
+  {
+    "id": "SEPTON",
+    "label": "Septon",
+    "reputation": 0
+  },
+  {
+    "id": "SILK_KING",
+    "label": "Silk King",
+    "reputation": 0
+  },
+  {
+    "id": "TICKLER",
+    "label": "Tickler",
+    "reputation": 0
+  },
+  {
+    "id": "TIMETT",
+    "label": "Timett",
+    "reputation": 0
+  },
+  {
+    "id": "TORRHEN",
+    "label": "Torrhen",
+    "reputation": 0
+  },
+  {
+    "id": "VISENYA",
+    "label": "Visenya",
+    "reputation": 0
+  },
+  {
+    "id": "WINTERFELL_SHEPHERD",
+    "label": "Shepherd",
+    "reputation": 0
+  },
+  {
+    "id": "BALERION",
+    "label": "Balerion",
+    "reputation": 0
+  },
+  {
+    "id": "BERT",
+    "label": "Bert",
+    "reputation": 0
+  },
+  {
+    "id": "DESMOND",
+    "label": "Desmond",
+    "reputation": 0
+  },
+  {
+    "id": "ELDRICK",
+    "label": "Eldrick",
+    "reputation": 0
+  },
+  {
+    "id": "FARMER",
+    "label": "Farmer",
+    "reputation": 0
+  },
+  {
+    "id": "FREY_SEPTON",
+    "label": "Frey Septon",
+    "reputation": 0
+  },
+  {
+    "id": "GREIZHEN",
+    "label": "Greizhen",
+    "reputation": 0
+  },
+  {
+    "id": "HOBB",
+    "label": "Hobb",
+    "reputation": 0
+  },
+  {
+    "id": "MERRY",
+    "label": "Merry",
+    "reputation": 0
+  },
+  {
+    "id": "QHORIN_HALFHAND",
+    "label": "Qhorin",
+    "reputation": 0
+  },
+  {
+    "id": "RYLENE",
+    "label": "Rylene",
+    "reputation": 0
+  },
+  {
+    "id": "SELWYN",
+    "label": "Selwyn",
+    "reputation": 0
+  },
+  {
+    "id": "SORCERER",
+    "label": "Sorcerer",
+    "reputation": 0
+  },
+  {
+    "id": "TARYN_MANT",
+    "label": "Taryn",
+    "reputation": 0
+  },
+  {
+    "id": "WILLEM_LANNISTER",
+    "label": "Willem",
+    "reputation": 0
+  },
+  {
+    "id": "ADRACK_HUMBLE",
+    "label": "Adrack Humble",
+    "reputation": 0
+  },
+  {
+    "id": "AXELL_FLORENT",
+    "label": "Axell Florent",
+    "reputation": 0
+  },
+  {
+    "id": "BALON_DWARF",
+    "label": "Balon Dwarf",
+    "reputation": 0
+  },
+  {
+    "id": "BLACK_JACK",
+    "label": "Black Jack",
+    "reputation": 0
+  },
+  {
+    "id": "BOLTON_GUARD",
+    "label": "Bolton Guard",
+    "reputation": 0
+  },
+  {
+    "id": "COOPER",
+    "label": "Cooper",
+    "reputation": 0
+  },
+  {
+    "id": "DONGO_THE_GIANT",
+    "label": "Dongo the Giant",
+    "reputation": 0
+  },
+  {
+    "id": "DONNEL_HILL",
+    "label": "Donnel Hill",
+    "reputation": 0
+  },
+  {
+    "id": "DONNEL_WAYNWOOD",
+    "label": "Donnel Waynwood",
+    "reputation": 0
+  },
+  {
+    "id": "DORNISH_LORD",
+    "label": "Dornish Lord",
+    "reputation": 0
+  },
+  {
+    "id": "ELDER_MEEREEN_SLAVE",
+    "label": "Meereen Statesman",
+    "reputation": 0
+  },
+  {
+    "id": "ENDREW",
+    "label": "Endrew",
+    "reputation": 0
+  },
+  {
+    "id": "FALYSE",
+    "label": "Falyse",
+    "reputation": 0
+  },
+  {
+    "id": "FIRST_MATE",
+    "label": "First Mate",
+    "reputation": 0
+  },
+  {
+    "id": "FOOL",
+    "label": "Fool",
+    "reputation": 0
+  },
+  {
+    "id": "GOATHERDS_SON",
+    "label": "Goatherd's Son",
+    "reputation": 0
+  },
+  {
+    "id": "GUYMON",
+    "label": "Guymon",
+    "reputation": 0
+  },
+  {
+    "id": "HIZDAHRS_FATHER",
+    "label": "Hizdahr's Father",
+    "reputation": 0
+  },
+  {
+    "id": "INNKEEPER",
+    "label": "Innkeeper",
+    "reputation": 0
+  },
+  {
+    "id": "INNKEEPERS_DAUGHTER",
+    "label": "Innkeeper's Daughter",
+    "reputation": 0
+  },
+  {
+    "id": "JOFFREY_DWARF",
+    "label": "Joffrey Dwarf",
+    "reputation": 0
+  },
+  {
+    "id": "KEGS",
+    "label": "Kegs",
+    "reputation": 0
+  },
+  {
+    "id": "LHARA",
+    "label": "Lhara",
+    "reputation": 0
+  },
+  {
+    "id": "LUTHOR",
+    "label": "Luthor",
+    "reputation": 0
+  },
+  {
+    "id": "MANSERVANT",
+    "label": "Manservant",
+    "reputation": 0
+  },
+  {
+    "id": "MASTER_MIGHDAL",
+    "label": "Master Mighdal",
+    "reputation": 0
+  },
+  {
+    "id": "MEEREEN_CHAMPION",
+    "label": "Meereen Champion",
+    "reputation": 0
+  },
+  {
+    "id": "MEEREEN_SLAVE",
+    "label": "Meereen Slave",
+    "reputation": 0
+  },
+  {
+    "id": "MOLES_TOWN_MADAM",
+    "label": "Mole's Town Madam",
+    "reputation": 0
+  },
+  {
+    "id": "MORAG",
+    "label": "Morag",
+    "reputation": 0
+  },
+  {
+    "id": "MULLY",
+    "label": "Mully",
+    "reputation": 0
+  },
+  {
+    "id": "MUSICIAN",
+    "label": "Musician",
+    "reputation": 0
+  },
+  {
+    "id": "OLLYS_MOTHER",
+    "label": "Olly's Mother",
+    "reputation": 0
+  },
+  {
+    "id": "ORSON",
+    "label": "Orson",
+    "reputation": 0
+  },
+  {
+    "id": "ORYS",
+    "label": "Orys",
+    "reputation": 0
+  },
+  {
+    "id": "ORYS_BROTHER",
+    "label": "Orys's Brother",
+    "reputation": 0
+  },
+  {
+    "id": "RENLY_DWARF",
+    "label": "Renly Dwarf",
+    "reputation": 0
+  },
+  {
+    "id": "ROBB_DWARF",
+    "label": "Robb Dwarf",
+    "reputation": 0
+  },
+  {
+    "id": "STANNIS_DWARF",
+    "label": "Stannis Dwarf",
+    "reputation": 0
+  },
+  {
+    "id": "THENN_WARG",
+    "label": "Thenn Warg",
+    "reputation": 0
+  },
+  {
+    "id": "TOMMY",
+    "label": "Tommy",
+    "reputation": 0
+  },
+  {
+    "id": "VANCE_CORBRAY",
+    "label": "Vance Corbray",
+    "reputation": 0
+  },
+  {
+    "id": "VIOLA",
+    "label": "Viola",
+    "reputation": 0
+  },
+  {
+    "id": "ZALA",
+    "label": "Zala",
+    "reputation": 0
+  },
+  {
+    "id": "BRAND",
+    "label": "Brand",
+    "reputation": 0
+  },
+  {
+    "id": "BRIAN",
+    "label": "Brian",
+    "reputation": 0
+  },
+  {
+    "id": "CERWYN",
+    "label": "Cerwyn",
+    "reputation": 0
+  },
+  {
+    "id": "DENYS",
+    "label": "Denys",
+    "reputation": 0
+  },
+  {
+    "id": "DERRYK",
+    "label": "Derryk",
+    "reputation": 0
+  },
+  {
+    "id": "LORD_WEEBLY",
+    "label": "Lord Weebly",
+    "reputation": 0
+  },
+  {
+    "id": "MADAME",
+    "label": "Madame",
+    "reputation": 0
+  },
+  {
+    "id": "MAGNAR",
+    "label": "Magnar",
+    "reputation": 0
+  },
+  {
+    "id": "OWNER",
+    "label": "Owner",
+    "reputation": 0
+  },
+  {
+    "id": "QUICK",
+    "label": "Quick",
+    "reputation": 0
+  },
+  {
+    "id": "RHAENYRA",
+    "label": "Rhaenyra",
+    "reputation": 0
+  },
+  {
+    "id": "STRONG",
+    "label": "Strong",
+    "reputation": 0
+  },
+  {
+    "id": "TANDA",
+    "label": "Tanda",
+    "reputation": 0
+  },
+  {
+    "id": "WOLKAN",
+    "label": "Wolkan",
+    "reputation": 0
+  },
+  {
+    "id": "AERON",
+    "label": "Aeron",
+    "reputation": 0
+  },
+  {
+    "id": "ARTHUR_CHILD",
+    "label": "Arthur (child)",
+    "reputation": 0
+  },
+  {
+    "id": "BELICHO",
+    "label": "Belicho",
+    "reputation": 0
+  },
+  {
+    "id": "DIM_DALBA",
+    "label": "Dim Dalba",
+    "reputation": 0
+  },
+  {
+    "id": "DOM",
+    "label": "Dom",
+    "reputation": 0
+  },
+  {
+    "id": "DOSH_KHALEEN_LEADER",
+    "label": "Dosh Khaleen Leader",
+    "reputation": 0
+  },
+  {
+    "id": "FLYNN",
+    "label": "Flynn",
+    "reputation": 0
+  },
+  {
+    "id": "GATINS",
+    "label": "Gatins",
+    "reputation": 0
+  },
+  {
+    "id": "GLOVER",
+    "label": "Glover",
+    "reputation": 0
+  },
+  {
+    "id": "GUARD_CAPTAIN",
+    "label": "Guard Captain",
+    "reputation": 0
+  },
+  {
+    "id": "HARALD",
+    "label": "Harald",
+    "reputation": 0
+  },
+  {
+    "id": "MAESTER_DORNE",
+    "label": "Dorne Maester",
+    "reputation": 0
+  },
+  {
+    "id": "MAESTER_MORMONT",
+    "label": "Mormont Maester",
+    "reputation": 0
+  },
+  {
+    "id": "MANDERLY",
+    "label": "Manderly",
+    "reputation": 0
+  },
+  {
+    "id": "MINISA",
+    "label": "Minisa",
+    "reputation": 0
+  },
+  {
+    "id": "RED_PRIEST",
+    "label": "Red Priest",
+    "reputation": 0
+  },
+  {
+    "id": "SON_OF_EDMURE",
+    "label": "Edmure's Son",
+    "reputation": 0
+  },
+  {
+    "id": "ALYS",
+    "label": "Alys",
+    "reputation": 0
+  },
+  {
+    "id": "NED_UMBER",
+    "label": "Ned Umber",
+    "reputation": 0
+  },
+  {
+    "id": "QHONO",
+    "label": "Qhono",
+    "reputation": 0
+  },
+  {
+    "id": "ALANNA",
+    "label": "Alanna",
+    "reputation": 0
+  },
+  {
+    "id": "CERSEIS_BABY",
+    "label": "Cersei's Baby",
+    "reputation": 0
+  },
+  {
+    "id": "DORNISH_PRINCE",
+    "label": "Dornish Prince",
+    "reputation": 0
+  },
+  {
+    "id": "IRONBORN_LORD",
+    "label": "Ironborn Lord",
+    "reputation": 0
+  },
+  {
+    "id": "OWEN",
+    "label": "Owen",
+    "reputation": 0
+  },
+  {
+    "id": "RIVERLANDS_LORD",
+    "label": "Riverlands Lord",
+    "reputation": 0
+  },
+  {
+    "id": "SARRA",
+    "label": "Sarra",
+    "reputation": 0
+  },
+  {
+    "id": "TEELA",
+    "label": "Teela",
+    "reputation": 0
+  },
+  {
+    "id": "UNSULLIED_CAPTAIN",
+    "label": "Unsullied Captain",
+    "reputation": 0
+  },
+  {
+    "id": "VALE_LORD",
+    "label": "Vale Lord",
+    "reputation": 0
+  },
+  {
+    "id": "WILLA",
+    "label": "Willa",
+    "reputation": 0
+  },
+  {
+    "id": "WILLIAM",
+    "label": "William",
+    "reputation": 0
+  }
+]

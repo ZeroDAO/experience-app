@@ -2150,11 +2150,6 @@
   optionalDependencies:
     prettier "^1.18.2"
 
-"@vue/devtools-api@^6.0.0-beta.19":
-  version "6.0.0-beta.19"
-  resolved "https://registry.npmmirror.com/@vue/devtools-api/download/@vue/devtools-api-6.0.0-beta.19.tgz?cache=0&sync_timestamp=1633376929470&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vue%2Fdevtools-api%2Fdownload%2F%40vue%2Fdevtools-api-6.0.0-beta.19.tgz#f8e88059daa424515992426a0c7ea5cde07e99bf"
-  integrity sha1-+OiAWdqkJFFZkkJqDH6lzeB+mb8=
-
 "@vue/eslint-config-prettier@^6.0.0":
   version "6.0.0"
   resolved "https://registry.npm.taobao.org/@vue/eslint-config-prettier/download/@vue/eslint-config-prettier-6.0.0.tgz"
@@ -2379,6 +2374,11 @@
   version "4.2.2"
   resolved "https://registry.npm.taobao.org/@xtuc/long/download/@xtuc/long-4.2.2.tgz"
   integrity sha1-0pHGpOl5ibXGHZrPOWrk/hM6cY0=
+
+"@yomguithereal/helpers@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.npmmirror.com/@yomguithereal/helpers/download/@yomguithereal/helpers-1.1.1.tgz#185dfb0f88ca2beec53d0adf6eed15c33b1c549d"
+  integrity sha1-GF37D4jKK+7FPQrfbu0VwzscVJ0=
 
 "@zondax/ledger-substrate@^0.18.0":
   version "0.18.0"
@@ -3051,7 +3051,7 @@ blakejs@^1.1.1:
   resolved "https://registry.nlark.com/blakejs/download/blakejs-1.1.1.tgz#bf313053978b2cd4c444a48795710be05c785702"
   integrity sha1-vzEwU5eLLNTERKSHlXEL4Fx4VwI=
 
-bluebird@^3.1.1, bluebird@^3.5.5, bluebird@^3.7.2:
+bluebird@^3.1.1, bluebird@^3.5.1, bluebird@^3.5.5, bluebird@^3.7.2:
   version "3.7.2"
   resolved "https://registry.npm.taobao.org/bluebird/download/bluebird-3.7.2.tgz"
   integrity sha1-nyKcFb4nJFT/qXOs4NvueaGww28=
@@ -4394,6 +4394,15 @@ csstype@^2.6.8:
   resolved "https://registry.npm.taobao.org/csstype/download/csstype-2.6.13.tgz?cache=0&sync_timestamp=1598348367308&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcsstype%2Fdownload%2Fcsstype-2.6.13.tgz"
   integrity sha1-pokwFbkOhN1uhdDjtEKh6E8tvg8=
 
+csvtojson@^2.0.10:
+  version "2.0.10"
+  resolved "https://registry.npm.taobao.org/csvtojson/download/csvtojson-2.0.10.tgz#11e7242cc630da54efce7958a45f443210357574"
+  integrity sha1-EeckLMYw2lTvznlYpF9EMhA1dXQ=
+  dependencies:
+    bluebird "^3.5.1"
+    lodash "^4.17.3"
+    strip-bom "^2.0.0"
+
 cuint@^0.2.2:
   version "0.2.2"
   resolved "https://registry.nlark.com/cuint/download/cuint-0.2.2.tgz#408086d409550c2631155619e9fa7bcadc3b991b"
@@ -5246,6 +5255,11 @@ eslint@^6.7.2:
     table "^5.2.3"
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
+
+esm@^3.2.25:
+  version "3.2.25"
+  resolved "https://registry.npm.taobao.org/esm/download/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
+  integrity sha1-NCwYwp1WFXaIulzjH4Qx+7eVzBA=
 
 espree@^6.1.2, espree@^6.2.1:
   version "6.2.1"
@@ -6206,6 +6220,51 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://registry.npm.taobao.org/graceful-fs/download/graceful-fs-4.2.4.tgz"
   integrity sha1-Ila94U02MpWMRl68ltxGfKB6Kfs=
 
+graphology-indices@^0.14.0:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/graphology-indices/download/graphology-indices-0.13.4.tgz#758b200d1b8cebec37c79b490e7850ca2f2cc12f"
+  integrity sha1-dYsgDRuM6+w3x5tJDnhQyi8swS8=
+  dependencies:
+    graphology-utils "^1.7.0"
+    mnemonist "^0.38.0"
+
+graphology-metrics@^1.16.1:
+  version "1.16.1"
+  resolved "https://registry.npmmirror.com/graphology-metrics/download/graphology-metrics-1.16.1.tgz#ad4b23314198a97c055e471b436993fa97921b6a"
+  integrity sha1-rUsjMUGYqXwFXkcbQ2mT+peSG2o=
+  dependencies:
+    graphology-shortest-path "^1.5.0"
+    graphology-utils "^2.3.0"
+    mnemonist "^0.38.3"
+
+graphology-shortest-path@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.npmmirror.com/graphology-shortest-path/download/graphology-shortest-path-1.5.0.tgz#3ecab10a4f3f1aeb855786af7a35c5426116d9f4"
+  integrity sha1-PsqxCk8/GuuFV4avejXFQmEW2fQ=
+  dependencies:
+    "@yomguithereal/helpers" "^1.1.1"
+    graphology-indices "^0.14.0"
+    graphology-utils "^2.1.2"
+    mnemonist "^0.38.1"
+
+graphology-utils@^1.7.0:
+  version "1.8.0"
+  resolved "https://registry.npmmirror.com/graphology-utils/download/graphology-utils-1.8.0.tgz#41315c468656e2a3e028a76468bbc2fbe42b0145"
+  integrity sha1-QTFcRoZW4qPgKKdkaLvC++QrAUU=
+
+graphology-utils@^2.1.2, graphology-utils@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npmmirror.com/graphology-utils/download/graphology-utils-2.3.0.tgz#f93e59cde7fe4056f9213d09eab79c5bc4665dba"
+  integrity sha1-+T5Zzef+QFb5IT0J6recW8RmXbo=
+
+graphology@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.npmmirror.com/graphology/download/graphology-0.21.1.tgz#042dc71d572e9bb5421b8ebddc879d822f5ac49f"
+  integrity sha1-BC3HHVcum7VCG4693Iedgi9axJ8=
+  dependencies:
+    events "^3.3.0"
+    obliterator "^1.6.1"
+
 growl@1.10.5:
   version "1.10.5"
   resolved "https://registry.npm.taobao.org/growl/download/growl-1.10.5.tgz"
@@ -7151,7 +7210,7 @@ is-typedarray@^1.0.0, is-typedarray@~1.0.0:
   resolved "https://registry.npm.taobao.org/is-typedarray/download/is-typedarray-1.0.0.tgz"
   integrity sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=
 
-is-utf8@^0.2.1:
+is-utf8@^0.2.0, is-utf8@^0.2.1:
   version "0.2.1"
   resolved "https://registry.npm.taobao.org/is-utf8/download/is-utf8-0.2.1.tgz"
   integrity sha1-Sw2hRCEE0bM2NA6AeX6GXPOffXI=
@@ -8098,6 +8157,13 @@ mkdirp@^1.0.4:
   resolved "https://registry.npm.taobao.org/mkdirp/download/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha1-PrXtYmInVteaXw4qIh3+utdcL34=
 
+mnemonist@^0.38.0, mnemonist@^0.38.1, mnemonist@^0.38.3:
+  version "0.38.5"
+  resolved "https://registry.npmmirror.com/mnemonist/download/mnemonist-0.38.5.tgz#4adc7f4200491237fe0fa689ac0b86539685cade"
+  integrity sha1-Stx/QgBJEjf+D6aJrAuGU5aFyt4=
+  dependencies:
+    obliterator "^2.0.0"
+
 mocha@^6.2.2:
   version "6.2.3"
   resolved "https://registry.npm.taobao.org/mocha/download/mocha-6.2.3.tgz"
@@ -8574,6 +8640,16 @@ object.values@^1.1.0, object.values@^1.1.1:
     function-bind "^1.1.1"
     has "^1.0.3"
 
+obliterator@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.npmmirror.com/obliterator/download/obliterator-1.6.1.tgz#dea03e8ab821f6c4d96a299e17aef6a3af994ef3"
+  integrity sha1-3qA+irgh9sTZaimeF672o6+ZTvM=
+
+obliterator@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/obliterator/download/obliterator-2.0.0.tgz#fdff649d1131a1a90b51cc97c865b5560dcb3dfa"
+  integrity sha1-/f9knRExoakLUcyXyGW1Vg3LPfo=
+
 obuf@^1.0.0, obuf@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/obuf/download/obuf-1.1.2.tgz"
@@ -9000,14 +9076,6 @@ pify@^4.0.1:
   version "4.0.1"
   resolved "https://registry.npm.taobao.org/pify/download/pify-4.0.1.tgz"
   integrity sha1-SyzSXFDVmHNcUCkiJP2MbfQeMjE=
-
-pinia@^2.0.0-rc.14:
-  version "2.0.0-rc.14"
-  resolved "https://registry.npmmirror.com/pinia/download/pinia-2.0.0-rc.14.tgz#c5c004c60b56806f465cae1bacce3922cf3163ac"
-  integrity sha1-xcAExgtWgG9GXK4brM45Is8xY6w=
-  dependencies:
-    "@vue/devtools-api" "^6.0.0-beta.19"
-    vue-demi "*"
 
 pinkie-promise@^2.0.0:
   version "2.0.1"
@@ -10876,6 +10944,13 @@ strip-bom@4.0.0:
   resolved "https://registry.npm.taobao.org/strip-bom/download/strip-bom-4.0.0.tgz"
   integrity "sha1-nDUFwdtFvO3KPZz3oW9cWqOQGHg= sha512-3xurFv5tEgii33Zi8Jtp55wEIILR9eh34FAW00PZf+JnSsTmV/ioewSgQl97JHvgjoRGwPShsWm+IdrxB35d0w=="
 
+strip-bom@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.nlark.com/strip-bom/download/strip-bom-2.0.0.tgz#6219a85616520491f35788bdbf1447a99c7e6b0e"
+  integrity sha1-YhmoVhZSBJHzV4i9vxRHqZx+aw4=
+  dependencies:
+    is-utf8 "^0.2.0"
+
 strip-bom@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/strip-bom/download/strip-bom-3.0.0.tgz"
@@ -11729,11 +11804,6 @@ vue-composable@1.0.0-alpha.37:
   version "1.0.0-alpha.37"
   resolved "https://registry.npmmirror.com/vue-composable/download/vue-composable-1.0.0-alpha.37.tgz#96c53b997cba1d740f738f380f45c24f4b7caa39"
   integrity sha1-lsU7mXy6HXQPc484D0XCT0t8qjk=
-
-vue-demi@*:
-  version "0.11.4"
-  resolved "https://registry.nlark.com/vue-demi/download/vue-demi-0.11.4.tgz#6101992fe4724cf5634018a16e953f3052e94e2a"
-  integrity sha1-YQGZL+RyTPVjQBihbpU/MFLpTio=
 
 vue-demi@latest:
   version "0.4.0"

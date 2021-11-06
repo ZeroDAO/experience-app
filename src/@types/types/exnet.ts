@@ -54,6 +54,9 @@ const definitions: RegistryTypes = {
   CurrencyId: {
     _enum: ['ZOO', 'SOCI', 'DOT']
   },
+  TIRStep: {
+    _enum: ['SEED', 'REPUTATION']
+  },
   TokenSymbol: {
     _enum: ['ZOO', 'SOCI', 'DOT']
   },

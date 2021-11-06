@@ -17,38 +17,46 @@ export const isValidAddressPolkadotAddress = (address: string) => {
 }
 
 /**
- * @description Return true if the address is a legitamate Polkadot address and false if it is not
+ * @description Return Balance
  * @param {string} bal number to be processed
- * @param {string} unit
- * @param {string} decimal
+ * @param {number} decimal
+ * @param {number} unit
  * @returns {BN}
  */
-export const reduceDenomToBalance = (bal: number, unit: number, decimal: number) => {
+export const reduceDenomToBalance = (bal: number, decimal: number, unit?: number) => {
   if (bal == 0) {
     return new BN(0)
   }
-  const unitDecimal = unit + decimal
+  const unitDecimal = unit ? unit + decimal : decimal
   const strBal = bal.toString()
   const arrDecimalBal = strBal.split('.')
   const minorityBal = (arrDecimalBal[1] || '').padEnd(unitDecimal, '0').substr(0, unitDecimal)
-  return new BN(arrDecimalBal[0].concat(minorityBal))
+  const balanceStr = arrDecimalBal[0] == '0' ? minorityBal : arrDecimalBal[0].concat(minorityBal)
+
+  return new BN(balanceStr)
 }
 
 export const defaultUnitIndex = 5
-const arrUnitPrefixes = [-15, -12, -9, -6, -3, 0, 3, 6, 9, 12]
-const arrUnitNames = ['femto', 'pico', 'nano', 'micro', 'milli', 'default', 'Kilo', 'Mill', 'Bill', 'Tril']
 
-export const setDefaultUnitName = (defaultName: string) => {
-  arrUnitNames[defaultUnitIndex] = defaultName
+const units = {
+  femto: -15,
+  pico: -12,
+  nano: -9,
+  micro: -6,
+  milli: -3,
+  default: 0,
+  Kilo: 3,
+  Mill: 6,
+  Bill: 9,
+  Tril: 12
 }
 
-export const getUnitNames = () => {
-  return arrUnitNames
+export const setDefaultUnitName = (defaultName: string) => {
+  units[defaultUnitIndex] = defaultName
 }
 
 export const getUnit = (unitType: string) => {
-  const index = arrUnitNames.findIndex(elem => elem === unitType)
-  return arrUnitPrefixes[index]
+  return units[unitType]
 }
 
 /**
