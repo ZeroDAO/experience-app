@@ -17,6 +17,7 @@ const definitions: RegistryTypes = {
     score: 'u32',
     nonce: 'u32'
   },
+  UserScores: 'Vec<(AccountId,u32)>',
   OperationStatus: {
     nonce: 'u32',
     last: 'BlockNumber',
@@ -55,7 +56,7 @@ const definitions: RegistryTypes = {
     _enum: ['ZOO', 'SOCI', 'DOT']
   },
   TIRStep: {
-    _enum: ['SEED', 'REPUTATION']
+    _enum: ['free', 'seed', 'Reputation']
   },
   TokenSymbol: {
     _enum: ['ZOO', 'SOCI', 'DOT']

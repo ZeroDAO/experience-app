@@ -64,6 +64,8 @@ export default defineComponent({
     }
 
     const txResHandler = (result: ISubmittableResult): void => {
+      console.log(result)
+
       const status = result.status
       setStoreState('general', 'isLoading', false)
       if (status.isInBlock) {

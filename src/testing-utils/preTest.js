@@ -16,6 +16,19 @@ export async function mockReputation() {
   const edges = await csv().fromFile(`./src/testing-utils/data/edges.csv`)
 
   write('edges', edges)
+  console.log(`Success: write edges.json`)
+
+  const edgesSet = edges.reduce((p, c) => {
+    if (p[c.source]) {
+      p[c.source].push(c.target)
+    } else {
+      p[c.source] = [c.target]
+    }
+    return p
+  }, {})
+
+  write('edges_set', edgesSet)
+  console.log(`Success: write edges_set.json`)
 
   const graph = new Graph()
 

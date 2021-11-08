@@ -22,8 +22,8 @@ async function retrieve(api) {
   }
 }
 
-export async function bestNumber(api) {
-  const blocklNumber = await api.derive.chain.bestNumber
+export async function bestNumber(apiRef) {
+  const blocklNumber = await apiRef?.value?.derive.chain.bestNumber()
   return blocklNumber.toNumber()
 }
 
