@@ -59,8 +59,6 @@ export async function connect(endpoint: string, networkId: number) {
 
   api.on('error', (error: Error) => console.error(error.message))
   api.on('ready', async () => {
-    console.log(api)
-
     const injectedPromise = web3Enable('polkadot-js/apps')
 
     try {

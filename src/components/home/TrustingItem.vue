@@ -10,7 +10,6 @@
     </a-list-item-meta>
     <div class="follow">
       <TrustButton :targer="address" />
-      <!-- <a-button :disabled="isMine" type="primary" :ghost="isTrusted" shape="round" size="large">{{ isTrusted ? '- UnTrust' : '+ Trust' }} </a-button> -->
     </div>
   </a-list-item>
 </template>
@@ -41,13 +40,9 @@ export default defineComponent({
     const { allAccountsInfo } = useAccount(apiRef as any)
 
     const userName = ' '
-    const isTrusted = context.myTrusting.indexOf(props.address as string) > -1
-    const isMine = props.address && context.myAddress == props.address
 
     return {
       userName,
-      isMine,
-      isTrusted,
       allAccountsInfo,
       ...toRefs(props)
     }

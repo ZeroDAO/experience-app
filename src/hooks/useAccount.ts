@@ -5,6 +5,10 @@ import { StateType, AccountExtension } from '@/@types'
 import { ApiPromise } from '@polkadot/api'
 import { isValidAddressPolkadotAddress } from '@/utils/common'
 
+// export const useUserName = (address) => {
+
+// }
+
 export const useAccount = (userRef?: Ref<string>) => {
   const store = useStore<StateType>()
 

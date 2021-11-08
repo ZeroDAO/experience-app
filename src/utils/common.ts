@@ -1,6 +1,15 @@
 import { decodeAddress, encodeAddress } from '@polkadot/keyring'
 import { hexToU8a, isHex } from '@polkadot/util'
 import BN from 'bn.js'
+import { keyring } from '@polkadot/ui-keyring'
+
+export const getUserName = (address: string) => {
+  try {
+    return keyring.getAddress(address, null)?.meta?.name || address.slice(0, 4) + '...' + address.slice(-4)
+  } catch (error) {
+    return ''
+  }
+}
 
 /**
  * @description Return true if the address is a legitamate Polkadot address and false if it is not

@@ -20,10 +20,6 @@
             <img src="../../../public/icon/polkadot.png" />
             <span class="primary">验证人</span>
           </div>
-          <div class="tag border-primary primary-light-bg">
-            <img src="../../../public/icon/kusama.svg" />
-            <span class="primary">身份注册商</span>
-          </div>
         </div> -->
       </div>
       <div class="right">
@@ -43,11 +39,11 @@
     <a-divider />
     <div class="user-statistic">
       <div class="user-follow">
-        <a-statistic :value="1128">
+        <!-- <a-statistic :value="1128">
           <template #suffix>
             <span class="text-second">fans</span>
           </template>
-        </a-statistic>
+        </a-statistic> -->
         <a-statistic :value="trusCount">
           <template #suffix>
             <span class="text-second">trusting</span>
@@ -92,11 +88,12 @@ export default defineComponent({
   },
   setup(props) {
     const { api } = useSubstrateContext()
+    const apiRef = computed(() => api)
 
     const addressRef = computed(() => props.address)
 
     const { userAccountInfo } = useAccount(addressRef as Ref<string>)
-    const reputation = useReputation(api, addressRef as Ref<string>)
+    const reputation = useReputation(apiRef, addressRef as Ref<string>)
 
     return {
       reputation,

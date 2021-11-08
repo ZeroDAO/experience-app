@@ -49,6 +49,11 @@ const menuData = [
     icon: 'icon-licai'
   },
   {
+    path: '/seed',
+    text: 'Seed',
+    icon: 'icon-jiangli'
+  },
+  {
     path: '/tests',
     text: 'Tests',
     icon: 'icon-ceshi'

@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 
 /** 自动加载其他路由模块 */
@@ -20,7 +20,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/wallet',
     name: 'Wallet',
-    component: () => import(/* webpackChunkName: "Test" */ '../views/Wallet.vue')
+    component: () => import(/* webpackChunkName: "Wallet" */ '../views/Wallet.vue')
+  },
+  {
+    path: '/seed',
+    name: 'Seed',
+    component: () => import(/* webpackChunkName: "Seed" */ '../views/Seed.vue')
   },
   {
     path: '/tests',
@@ -30,7 +35,7 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 })
 

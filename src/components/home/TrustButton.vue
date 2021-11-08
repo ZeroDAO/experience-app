@@ -1,6 +1,8 @@
 <template>
-  <a-button :disabled="isMine" :loading="loading" type="primary" :ghost="isTrusted" shape="round" size="large" @click="trustOrUn()"> {{ isTrusted ? '- Untrust' : '+ Trust' }} </a-button>
-  <TransactionAction ref="txRef" txType="SIGNED-TX" html-type="submit" :attrs="attrsRef" @complete="handleComplete" />
+  <a-button :disabled="isMine" :loading="loading" type="primary" :ghost="isTrusted" shape="round" size="large" @click="trustOrUn()">
+    {{ isTrusted ? '- Untrust' : '+ Trust' }}
+    <TransactionAction ref="txRef" txType="SIGNED-TX" html-type="submit" :attrs="attrsRef" @complete="handleComplete" />
+  </a-button>
 </template>
 
 <script lang="ts">
