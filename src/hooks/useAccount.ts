@@ -1,18 +1,27 @@
 import { computed, ref, reactive, watch, watchEffect, Ref, toRefs } from 'vue'
-// import { setStoreState } from '@/store/utils';
 import { useStore } from 'vuex'
-import { StateType, AccountExtension, AccountInfo } from '@/@types'
+import { StateType, AllUserInfo, AccountExtension, AccountInfo } from '@/@types'
 import { ApiPromise } from '@polkadot/api'
 import { isValidAddressPolkadotAddress } from '@/utils/common'
 import { keyring } from '@polkadot/ui-keyring'
 
+const nameFromAddress = address => {
+  return address ? address.slice(0, 4) + '...' + address.slice(-4) : ''
+}
+
+function userInfoHandler({ address, meta }): AccountInfo {
+  return {
+    address: address,
+    meta: {
+      name: meta?.name || nameFromAddress(address),
+      mould: meta?.isTesting ? 'Dev' : meta?.source == 'polkadot-js' ? 'extension' : (meta?.source as string) || ''
+    }
+  }
+}
+
 export const useUserInfo = address => {
   const store = useStore<StateType>()
   const keyringState = computed(() => store.state.general.keyringState)
-
-  const nameFromAddress = address => {
-    return address.slice(0, 4) + '...' + address.slice(-4)
-  }
 
   const state: AccountInfo = reactive<AccountInfo>({
     address: address,
@@ -27,20 +36,59 @@ export const useUserInfo = address => {
     status => {
       if (status == 'READY') {
         const meta = keyring.getAddress(address, null)?.meta
-        state.meta.name = meta?.name || nameFromAddress(address)
-        if (meta?.isTesting) {
-          state.meta.mould = 'Dev'
-        } else if (meta?.source == 'polkadot-js') {
-          state.meta.mould = 'extension'
-        } else if (meta?.source) {
-          state.meta.mould = meta.source as string
-        }
+        state.meta = userInfoHandler({ address, meta }).meta
       }
     },
     { immediate: true }
   )
 
   return toRefs(state)
+}
+
+// A better approach should be adopted
+export const useUserInfoRef = addressRef => {
+  const store = useStore<StateType>()
+  const keyringState = computed(() => store.state.general.keyringState)
+
+  const state: AccountInfo = reactive<AccountInfo>({
+    address: addressRef?.vlaue,
+    meta: {
+      name: nameFromAddress(addressRef?.vlaue),
+      mould: ''
+    }
+  })
+
+  watch(
+    () => [keyringState.value, addressRef.value],
+    ([status, address]) => {
+      if (status == 'READY' && address) {
+        const meta = keyring.getAddress(address, null)?.meta
+        state.meta = userInfoHandler({ address, meta }).meta
+      }
+    },
+    { immediate: true }
+  )
+  return toRefs(state)
+}
+
+export const useAllUsersInfo = () => {
+  const store = useStore<StateType>()
+  const keyringState = computed(() => store.state.general.keyringState)
+
+  const allUserInfo = ref<Array<AccountInfo>>([])
+
+  watch(
+    () => keyringState.value,
+    status => {
+      if (status == 'READY') {
+        const AccountInfoArr = keyring.getAccounts().map((e): AccountInfo => userInfoHandler(e))
+        allUserInfo.value = AccountInfoArr
+      }
+    },
+    { immediate: true }
+  )
+
+  return allUserInfo
 }
 
 export const useAccount = (userRef?: Ref<string>) => {

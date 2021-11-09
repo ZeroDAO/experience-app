@@ -5,6 +5,6 @@ const AppConfig = {
 }
 const StaticConfig = {
   MaxPageSize: 1000,
-  IconfontURL: '//at.alicdn.com/t/font_2649652_s235cgmdzjs.js'
+  IconfontURL: '//at.alicdn.com/t/font_2649652_viq08m13j9.js'
 }
 export { AppConfig, StaticConfig }

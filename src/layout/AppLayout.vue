@@ -11,6 +11,31 @@
             <router-link :to="menuItem.path">{{ menuItem.text }}</router-link>
           </a-menu-item>
         </a-menu>
+        <div class="sider-btm">
+          <div>
+            <a-button type="primary" shape="circle">
+              <template #icon>
+                <IconFont type="icon-twitter" />
+              </template>
+            </a-button>
+            <a-button type="primary" shape="circle">
+              <template #icon>
+                <IconFont type="icon-medium" />
+              </template>
+            </a-button>
+            <a-button type="primary" shape="circle">
+              <template #icon>
+                <IconFont type="icon-iconshareredditbeifen" />
+              </template>
+            </a-button>
+            <a-button type="primary" shape="circle">
+              <template #icon>
+                <IconFont type="icon-github1" />
+              </template>
+            </a-button>
+          </div>
+          <ChangeLanguage />
+        </div>
       </a-layout-sider>
       <a-layout>
         <app-header />
@@ -36,6 +61,7 @@ import { provideSubstrateContext, useTrusting } from '@/hooks'
 import { useStore } from 'vuex'
 import { ApiPromise } from '@polkadot/api'
 import { SubstrateInterface } from '@/@types'
+import ChangeLanguage from '@/components/ChangeLanguage.vue'
 
 const menuData = [
   {
@@ -64,7 +90,8 @@ export default defineComponent({
   components: {
     // AppFooter,
     AppHeader,
-    AccountSelector
+    AccountSelector,
+    ChangeLanguage
   },
   setup() {
     const fullScreenMode = ref(true)
@@ -149,6 +176,19 @@ export default defineComponent({
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+}
+.sider-btm {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  padding: 5px;
+  button {
+    margin-right: 5px;
+  }
 }
 .content-mask {
   position: absolute;

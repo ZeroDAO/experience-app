@@ -5,9 +5,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, toRefs } from 'vue'
-import { useAccount } from '@/hooks'
-import { useSubstrateContext } from '@/hooks/context/SubstrateContext'
+import { defineComponent, toRefs } from 'vue'
 import UserCard from '../common/UserCard.vue'
 
 export default defineComponent({
@@ -23,15 +21,7 @@ export default defineComponent({
     }
   },
   setup(props) {
-    const context = useSubstrateContext()
-    const apiRef = ref(context.api)
-    const { allAccountsInfo } = useAccount(apiRef as any)
-
-    const userName = ' '
-
     return {
-      userName,
-      allAccountsInfo,
       ...toRefs(props)
     }
   }

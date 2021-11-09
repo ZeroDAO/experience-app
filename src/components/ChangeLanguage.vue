@@ -1,9 +1,9 @@
 <template>
-  <a-dropdown :trigger="['click']">
+  <a-dropdown :trigger="['click']" placement="topRight">
     <a class="ant-dropdown-link" @click="e => e.preventDefault()" :style="{ color: titleColor, fontSize: titleSize }"> {{ i18n.languageName }}<DownOutlined /></a>
     <template v-slot:overlay>
       <a-menu class="dropdown-panel">
-        <a-menu-item v-for="(value, key) of LanguageNameList" :key="key" @click="changeLanguage">
+        <a-menu-item v-for="(value, key) of LanguageNameList" :key="key" @click="changeLanguage(key)">
           <span :style="{ color: textColor }">{{ LanguageNameList[key] }}</span>
         </a-menu-item>
       </a-menu>
@@ -21,7 +21,7 @@ export default defineComponent({
   props: {
     titleColor: {
       type: String,
-      default: '#fff'
+      default: '#8a96d9'
     },
     textColor: {
       type: String,
@@ -29,7 +29,7 @@ export default defineComponent({
     },
     titleSize: {
       type: String,
-      default: '16px'
+      default: '14px'
     }
   },
   components: {
@@ -38,7 +38,7 @@ export default defineComponent({
   setup() {
     const { i18n } = i18nInstance
     const changeLanguage = e => {
-      const lang = e.key
+      const lang = e
       setLang(lang).then(result => {
         if (result === lang) {
           message.success(`${i18n.value['Current Language:']} ${i18n.value.languageName}`)
@@ -53,25 +53,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style lang="less" scoped>
-.dropdown-panel {
-  background: rgba(255, 255, 255, 0.3);
-  margin-top: 10px;
-  /deep/ .ant-dropdown-menu-item-active {
-    background: transparent;
-    transform: translateX(2px);
-    transition: all 0.2s ease-in-out;
-  }
-}
-.dropdown-panel::before {
-  content: '';
-  display: block;
-  border: 10px solid transparent;
-  border-bottom-color: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-</style>

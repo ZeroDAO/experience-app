@@ -3,25 +3,8 @@
     <a-row :gutter="[16, 16]">
       <a-col :span="6"><div class="logo"></div></a-col>
       <a-col :span="18" class="search">
-        <a-input-search v-model:value="value" size="large" placeholder="Address" @search="onSearch" />
+        <a-input-search v-model:value="address" size="large" placeholder="Address" @search="goHome()" />
       </a-col>
-      <!-- <a-col :span="6" class="right">
-        <a-select v-model:value="network" class="round box-grey-background" dropdownClassName="network-dropdown" @focus="focus" ref="select" size="large" :dropdownMatchSelectWidth="false" @change="handleChange">
-          <a-select-option value="polkadot">
-            <div>
-              <img :src="networks.polkadot.icon" />
-              <span>polkadot</span>
-            </div>
-          </a-select-option>
-          <a-select-option value="kusama">
-            <div>
-              <img :src="networks.kusama.icon" />
-              <span>kusama</span>
-            </div>
-          </a-select-option>
-        </a-select>
-
-      </a-col> -->
     </a-row>
   </a-layout-header>
 </template>
@@ -30,41 +13,15 @@
 import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
-  data() {
+  setup() {
+    const address = ref<string>('')
     return {
-      network: 'polkadot'
+      address
     }
   },
-  setup() {
-    const value = ref<string>('')
-    const focus = () => {
-      console.log('focus')
-    }
-
-    const onSearch = () => {
-      console.log('onSearch')
-    }
-
-    const handleChange = (value: string) => {
-      console.log(`selected ${value}`)
-    }
-
-    const networks = {
-      polkadot: {
-        icon: '../icon/polkadot.png'
-      },
-      kusama: {
-        icon: '../icon/kusama.svg'
-      }
-    }
-
-    return {
-      value,
-      networks,
-      focus,
-      handleChange,
-      onSearch,
-      value1: ref('lucy')
+  methods: {
+    goHome() {
+      this.$router.push(`/${this.address}`)
     }
   }
 })

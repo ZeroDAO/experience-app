@@ -64,9 +64,8 @@ import { defineComponent, toRefs, Ref, computed } from 'vue'
 import { DownOutlined } from '@ant-design/icons-vue'
 import TrustButton from './TrustButton.vue'
 import { useSubstrateContext } from '@/hooks/context/SubstrateContext'
-import { useReputation, useUserInfo } from '@/hooks'
+import { useReputation, useUserInfoRef } from '@/hooks'
 import Beachball from '../id/Beachball.vue'
-import { useAccount } from '@/hooks'
 
 export default defineComponent({
   name: 'HeadCard',
@@ -89,18 +88,15 @@ export default defineComponent({
   setup(props) {
     const { api } = useSubstrateContext()
     const apiRef = computed(() => api)
-
     const addressRef = computed(() => props.address)
 
-    const { userAccountInfo } = useAccount(addressRef as Ref<string>)
-    const reputation = useReputation(apiRef, addressRef as Ref<string>)
+    const { meta } = useUserInfoRef(addressRef)
 
-    const { meta } = useUserInfo(props.address as string)
+    const reputation = useReputation(apiRef, addressRef as Ref<string>)
 
     return {
       reputation,
       meta,
-      userAccountInfo,
       ...toRefs(props)
     }
   }

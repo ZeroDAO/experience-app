@@ -1,6 +1,7 @@
 <template>
   <div class="page home">
-    <a-row :gutter="10">
+    <a-result v-if="!userAddress" status="404" title="No User found" sub-title="No wallet login or wrong address."> </a-result>
+    <a-row v-else :gutter="10">
       <a-col class="gutter-row" :span="24" :md="16">
         <HeadCard :address="userAddress" :trusCount="userTrustList.length" />
         <TabCard :trustingList="userTrustList" />
@@ -48,12 +49,6 @@ export default defineComponent({
       userTrustList,
       userAddress
     }
-  },
-  methods: {
-    hello() {
-      console.log('hahha')
-      return 'nihao'
-    }
   }
 })
 </script>
@@ -86,10 +81,11 @@ export default defineComponent({
     .ant-badge {
       .avatar {
         width: 130px;
-        border-radius: 50%;
-        border: 5px solid #ffffff;
+        border-radius: 100%;
+        border: 5px solid #3e66a7;
+        background: #3e66a7;
         position: absolute;
-        left: 0;
+        left: -5px;
         top: -60px;
       }
     }

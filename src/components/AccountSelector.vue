@@ -3,8 +3,8 @@
     <IdenticonCard :address="currentAccount" @click="showModal" />
     <a-modal v-model:visible="visible" title="Choose Account" @ok="handleOk" @cancel="cancel">
       <a-radio-group v-model:value="selAccount" buttonStyle="solid">
-        <a-radio-button v-for="(account, i) in allAccounts" :key="i" :value="account">
-          <Identicon :address="account" :nameType="allAccountsInfo[account].meta.source" :name="allAccountsInfo[account].meta.name" :size="50" />
+        <a-radio-button v-for="(account, i) in allUserInfo" :key="i" :value="account.address">
+          <Identicon :name="account.meta.name" :address="account.address" :nameType="account.meta.mould" :size="50" />
         </a-radio-button>
       </a-radio-group>
     </a-modal>
@@ -13,11 +13,11 @@
 <script lang="ts">
 import { defineComponent, ref, computed } from 'vue'
 import IdenticonCard from './id/IdenticonCard.vue'
-import { useAccount } from '../hooks'
 import Identicon from './id/Identicon.vue'
 import { useStore } from 'vuex'
 import { StateType } from '@/@types'
 import { setStoreState } from '@/store/utils'
+import { useAllUsersInfo } from '@/hooks'
 
 export default defineComponent({
   name: 'AccountSelector',
@@ -29,7 +29,7 @@ export default defineComponent({
     const visible = ref<boolean>(false)
     const store = useStore<StateType>()
 
-    const { allAccountsInfo, allAccounts } = useAccount()
+    const allUserInfo = useAllUsersInfo()
 
     const currentAccount = computed(() => store.state.general.currentAccount)
     const selAccount = ref(currentAccount.value)
@@ -53,10 +53,9 @@ export default defineComponent({
       showModal,
       handleOk,
       currentAccount,
-      allAccounts,
       selAccount,
-      allAccountsInfo,
-      cancel
+      cancel,
+      allUserInfo
     }
   }
 })
