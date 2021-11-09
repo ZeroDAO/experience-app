@@ -13,9 +13,8 @@
 
 <script lang="ts">
 import { defineComponent, ref, toRefs } from 'vue'
-import { useAccount, useUserInfo } from '@/hooks'
+import { useUserInfo } from '@/hooks'
 import TrustButton from '../home/TrustButton.vue'
-import { useSubstrateContext } from '@/hooks/context/SubstrateContext'
 import Beachball from '../id/Beachball.vue'
 
 export default defineComponent({
@@ -32,15 +31,10 @@ export default defineComponent({
     }
   },
   setup(props) {
-    const context = useSubstrateContext()
-    const apiRef = ref(context.api)
-    const { allAccountsInfo } = useAccount(apiRef as any)
-
     const { meta } = useUserInfo(props.address as string)
 
     return {
       meta,
-      allAccountsInfo,
       ...toRefs(props)
     }
   },

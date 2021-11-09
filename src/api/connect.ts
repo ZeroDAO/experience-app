@@ -72,16 +72,16 @@ export async function connect(endpoint: string, networkId: number) {
 
     try {
       await loadAccounts(api, chainInfo.isDevelopment)
-      keyring.accounts.subject.subscribe(accounts => {
-        if (accounts) {
-          setStoreState('general', 'allAccounts', Object.keys(accounts))
-          const accountExt: any = Object.values(accounts).reduce((aes, obj: any) => {
-            aes[obj.json.address] = obj.json
-            return aes
-          }, {})
-          setStoreState('general', 'allAccountsInfo', accountExt)
-        }
-      })
+      // keyring.accounts.subject.subscribe(accounts => {
+      //   if (accounts) {
+      //     setStoreState('general', 'allAccounts', Object.keys(accounts))
+      //     const accountExt: any = Object.values(accounts).reduce((aes, obj: any) => {
+      //       aes[obj.json.address] = obj.json
+      //       return aes
+      //     }, {})
+      //     setStoreState('general', 'allAccountsInfo', accountExt)
+      //   }
+      // })
       setStoreState('general', 'currentNetworkStatus', 'connected')
     } catch (err) {
       console.error(err)

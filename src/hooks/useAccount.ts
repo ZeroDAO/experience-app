@@ -91,33 +91,26 @@ export const useAllUsersInfo = () => {
   return allUserInfo
 }
 
-export const useAccount = (userRef?: Ref<string>) => {
+export const useAccount = () => {
   const store = useStore<StateType>()
+  const keyringState = computed(() => store.state.general.keyringState)
 
-  const allAccounts = computed(() => store.state.general.allAccounts)
-  const allAccountsInfo = computed(() => store.state.general.allAccountsInfo)
   const currentAccount = computed(() => store.state.general.currentAccount)
-
   const currentAccountInfo = ref({})
-  const userAccountInfo = ref({})
 
   watch(
-    () => [allAccountsInfo.value, currentAccount.value, userRef?.value],
-    ([allInfo, address, user]) => {
-      currentAccountInfo.value = allInfo[address]
-      if (user) {
-        userAccountInfo.value = allInfo[user]
+    () => [currentAccount.value, keyringState.value],
+    ([address, status]) => {
+      if (status == 'READY' && address) {
+        currentAccountInfo.value = keyring.getAddress(address, null)
       }
     },
     { immediate: true }
   )
 
   return {
-    allAccounts,
     currentAccount,
-    allAccountsInfo,
-    currentAccountInfo,
-    userAccountInfo
+    currentAccountInfo
   }
 }
 

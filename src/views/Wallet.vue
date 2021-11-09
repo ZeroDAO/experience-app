@@ -26,13 +26,12 @@ export default defineComponent({
   setup() {
     const { api } = useSubstrateContext()
     const apiRef = computed(() => api)
-    const { allAccounts, currentAccount } = useAccount()
+    const { currentAccount } = useAccount()
     const { balanceRef, accountBalance } = useAccountBalance(apiRef, currentAccount)
 
     return {
       balanceRef,
       accountBalance,
-      allAccounts,
       currentAccount
     }
   }

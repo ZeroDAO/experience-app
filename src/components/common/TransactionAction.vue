@@ -46,7 +46,7 @@ export default defineComponent({
 
       if (isInjected) {
         // 'polkadot-js' ? 'extension'
-        const injected = await web3FromSource(source == 'extension' ? 'polkadot-js' : source)
+        const injected = await web3FromSource(source)
         fromAcct = address
         apiRef.value.setSigner(injected.signer)
       } else {
