@@ -159,27 +159,6 @@ export default defineComponent({
   text-align: left;
 }
 
-.identity {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-  margin-top: 30px;
-  .left {
-    max-width: 80%;
-    p:first-child {
-      font-size: 26px;
-      margin: 0;
-    }
-    p:nth-child(2) {
-      margin: 0;
-      color: #c3bebe;
-    }
-  }
-  .right {
-    display: flex;
-    align-items: flex-end;
-  }
-}
 .tags {
   display: flex;
   margin-top: 5px;

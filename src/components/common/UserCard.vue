@@ -1,23 +1,22 @@
 <template>
-  <a-card class="user-card" :bordered="false">
-    <div class="info">
-      <Beachball class="avatar" :size="50" :address="address" />
-      <div class="mid">
-        <a :href="'./' + address">{{ userName }}</a>
-        <a-typography-paragraph copyable ellipsis :content="address"></a-typography-paragraph>
-      </div>
+  <a-card class="user-card" hoverable :bordered="false" @click="goHome()">
+    <Beachball class="avatar" :size="50" :address="address" />
+    <div class="content">
+      <a class="name">
+        {{ meta.name }}<span class="suffix">{{ meta.mould }}</span>
+      </a>
+      <a-typography-paragraph :ellipsis="true" :content="address" />
     </div>
     <TrustButton :targer="address" />
   </a-card>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, toRefs, computed } from 'vue'
-import { useAccount } from '@/hooks'
+import { defineComponent, ref, toRefs } from 'vue'
+import { useAccount, useUserInfo } from '@/hooks'
 import TrustButton from '../home/TrustButton.vue'
 import { useSubstrateContext } from '@/hooks/context/SubstrateContext'
 import Beachball from '../id/Beachball.vue'
-import { getUserName } from '@/utils/common'
 
 export default defineComponent({
   name: 'UserCard',
@@ -37,13 +36,17 @@ export default defineComponent({
     const apiRef = ref(context.api)
     const { allAccountsInfo } = useAccount(apiRef as any)
 
-    // const userName = getUserName(props.address as string)
-    const userName = computed(() => getUserName(props.address as string))
+    const { meta } = useUserInfo(props.address as string)
 
     return {
-      userName,
+      meta,
       allAccountsInfo,
       ...toRefs(props)
+    }
+  },
+  methods: {
+    goHome() {
+      this.$router.push(`/${this.address}`)
     }
   }
 })
@@ -51,25 +54,26 @@ export default defineComponent({
 
 <style lang="less">
 .user-card {
-  .ant-typography-single-line {
-    white-space: break-spaces !important;
-  }
-  .ant-card {
-    border-radius: 15px !important;
+  div.ant-typography,
+  .ant-typography p {
+    margin-bottom: 0 !important;
+    font-size: 12px !important;
   }
   .ant-card-body {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    .info {
-      display: flex;
-      align-items: center;
-      .mid {
-        margin: auto 15px;
-        a {
-          color: #fff;
-          font-size: 16px;
-        }
+    width: 100%;
+    button {
+      float: right;
+      margin-right: 0;
+      margin-left: auto;
+    }
+    .content {
+      display: grid;
+      margin-left: 15px;
+      .name {
+        color: #fff;
+        font-size: 18px;
       }
     }
   }

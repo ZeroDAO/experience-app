@@ -26,6 +26,7 @@ const App = defineComponent({
     const currentLanguage = computed(() => Locales[store.state.app.language])
 
     setStoreState('general', 'isLoading', false)
+    setStoreState('general', 'keyringState', 'LOADING')
 
     const networkId = localStorage.getItem('networkId')
     const customEndpoint = localStorage.getItem('customEndpoint')

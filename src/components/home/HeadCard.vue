@@ -13,7 +13,7 @@
     </div>
     <div class="identity">
       <div class="left">
-        <p>{{ userAccountInfo?.meta.name }}</p>
+        <p>{{ meta.name }}</p>
         <p><a-typography-paragraph copyable ellipsis :content="address"></a-typography-paragraph></p>
         <!-- <div class="tags">
           <div class="tag border-primary primary-light-bg">
@@ -64,7 +64,7 @@ import { defineComponent, toRefs, Ref, computed } from 'vue'
 import { DownOutlined } from '@ant-design/icons-vue'
 import TrustButton from './TrustButton.vue'
 import { useSubstrateContext } from '@/hooks/context/SubstrateContext'
-import { useReputation } from '@/hooks'
+import { useReputation, useUserInfo } from '@/hooks'
 import Beachball from '../id/Beachball.vue'
 import { useAccount } from '@/hooks'
 
@@ -95,8 +95,11 @@ export default defineComponent({
     const { userAccountInfo } = useAccount(addressRef as Ref<string>)
     const reputation = useReputation(apiRef, addressRef as Ref<string>)
 
+    const { meta } = useUserInfo(props.address as string)
+
     return {
       reputation,
+      meta,
       userAccountInfo,
       ...toRefs(props)
     }
@@ -107,5 +110,28 @@ export default defineComponent({
 <style lang="less">
 .trust-btm {
   min-height: 36px;
+}
+.head {
+  .identity {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 30px;
+    .left {
+      max-width: 80%;
+      p:first-child {
+        font-size: 26px;
+        margin: 15px auto 0 auto;
+      }
+      p:nth-child(2) {
+        margin: 0;
+        color: #c3bebe;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
 }
 </style>

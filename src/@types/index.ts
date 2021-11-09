@@ -51,6 +51,7 @@ export interface AccountInfo {
   meta: {
     name: string
     source?: string
+    mould: string
   }
 }
 
@@ -108,7 +109,6 @@ export interface GeneralStateInterface {
   allAccountTypes: string[]
   currentNetworkStatus: ConnectionType
   currentNetworkId: number
-  isCheckMetamask: boolean
   currentAccountIdx: number
   currentCustomEndpoint: string
   currentTheme: Theme
