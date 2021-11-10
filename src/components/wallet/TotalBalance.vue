@@ -1,18 +1,20 @@
 <template>
   <a-card class="total-balance-card primary-bg" title="Total Balance">
-    <Balance :balance="accountData?.getActualTotalBalance()" />
+    <Balance v-if="accountData" :balance="accountData?.getActualTotalBalance()" />
   </a-card>
 </template>
 <script lang="ts">
-import { defineComponent, toRefs } from 'vue'
+import { defineComponent, toRefs, PropType } from 'vue'
 import Balance from '../common/Balance.vue'
+import { AccountBalance } from '@/hooks'
 
 export default defineComponent({
   name: 'TotalBalance',
   props: {
     accountData: {
-      type: Object,
-      required: true
+      type: Object as PropType<AccountBalance> | undefined,
+      required: true,
+      default: undefined
     }
   },
   components: {

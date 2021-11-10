@@ -115,7 +115,6 @@ export default defineComponent({
         isSollapsed.value = collapsed
         isBroken.value = collapsed
       }
-      console.log(collapsed, type)
     }
 
     const apiRef = ref<ApiPromise | undefined>(undefined)

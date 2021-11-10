@@ -28,15 +28,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, toRefs, ref, computed } from 'vue'
+import { defineComponent, toRefs, ref, computed, PropType } from 'vue'
 import { useStore } from 'vuex'
 import Balance from '../common/Balance.vue'
 import TransferForm from './forms/TransferForm.vue'
 import Claim from './forms/Claim.vue'
 import { StateType } from '@/@types'
+import { AccountBalance } from '@/hooks'
 
 export default defineComponent({
-  name: 'TotalBalance',
+  name: 'Transferable',
   components: {
     Balance,
     TransferForm,
@@ -44,8 +45,8 @@ export default defineComponent({
   },
   props: {
     accountData: {
-      type: Object,
-      required: true
+      type: Object as PropType<AccountBalance | undefined>,
+      default: undefined
     }
   },
   setup(props) {

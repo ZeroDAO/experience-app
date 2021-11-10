@@ -1,9 +1,13 @@
 <template>
   <div class="wallet">
     <a-row>
-      <a-col :span="24" :lg="5"><TotalBalance :account-data="accountBalance"/></a-col>
+      <a-col :span="24" :lg="5">
+        <a-card class="total-balance-card primary-bg" title="Total Balance">
+          <Balance v-if="accountBalance" :balance="accountBalance.getActualTotalBalance()" />
+        </a-card>
+      </a-col>
       <a-col :span="24" :lg="12">
-        <Transferable :account-data="accountBalance" />
+        <Transferable :accountData="accountBalance" />
       </a-col>
       <a-col :span="24" :lg="7"><BalanceDetails :account-data="accountBalance"/></a-col>
     </a-row>
@@ -13,15 +17,15 @@
 import { defineComponent, computed } from 'vue'
 import { useSubstrateContext } from '@/hooks/context/SubstrateContext'
 import { useAccountBalance, useAccount } from '../hooks'
-import TotalBalance from '@/components/wallet/TotalBalance.vue'
 import BalanceDetails from '@/components/wallet/BalanceDetails.vue'
 import Transferable from '@/components/wallet/Transferable.vue'
+import Balance from '@/components/common/Balance.vue'
 
 export default defineComponent({
   components: {
-    TotalBalance,
     BalanceDetails,
-    Transferable
+    Transferable,
+    Balance
   },
   setup() {
     const { api } = useSubstrateContext()
@@ -46,6 +50,17 @@ export default defineComponent({
     height: auto;
     margin: 15px 5px;
     border-radius: 20px;
+  }
+  .total-balance-card {
+    .ant-card-head {
+      border-bottom: none;
+    }
+    #balance {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
   }
 }
 </style>

@@ -25,8 +25,6 @@ const App = defineComponent({
     const loadingText = computed(() => store.state.app.loadingText)
     const currentLanguage = computed(() => Locales[store.state.app.language])
 
-    console.log('currentLanguage', currentLanguage)
-
     setStoreState('general', 'isLoading', false)
     setStoreState('general', 'keyringState', 'LOADING')
 
