@@ -11,7 +11,8 @@ export default defineComponent({
   name: 'TotalBalance',
   props: {
     accountData: {
-      type: Object
+      type: Object,
+      required: true
     }
   },
   components: {

@@ -1,10 +1,3 @@
-// async function retrieve(apiRef: any) {
-//   const res = await apiRef?.value?.query.zdSeeds.seeds()
-//   const seedList = res.map(e => e.toString());
-//   return { seedList: seedList }
-// }
-
-// export async function useSeed(apiRef: any) {
 import { ref } from 'vue'
 
 export function useSeed(apiRef: any) {

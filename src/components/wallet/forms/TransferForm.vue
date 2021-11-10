@@ -9,7 +9,7 @@
     <a-form-item :wrapper-col="{ span: 14, offset: 4 }">
       <a-button shape="round" size="large" ghost key="back" @click="handleCancel">Cancel</a-button>
       <a-button shape="round" size="large" type="primary" html-type="submit">Confirm</a-button>
-      <TransactionAction ref="txRef" :txType="txType" html-type="submit" :attrs="attrsRef" :disabled="checked" @complete="handleComplete" />
+      <TransactionAction ref="txRef" :txType="txType" html-type="submit" :attrs="attrsRef" @complete="handleComplete" />
     </a-form-item>
   </a-form>
 </template>

@@ -203,6 +203,7 @@ export default defineComponent({
     })
 
     let users = null
+    const allAddress = null
     let seeds = null
     let edges = null
     let alice = null
@@ -329,6 +330,13 @@ export default defineComponent({
       }
     }
 
+    const initAllAddress = () => {
+      if (!allAddress) {
+        initUsers()
+        users = require(`@/testing-utils/data/nodes.json`)
+      }
+    }
+
     const initSeeds = () => {
       if (!seeds) {
         seeds = require(`@/testing-utils/data/seeds.json`)
@@ -383,8 +391,10 @@ export default defineComponent({
           'sr25519'
         )
         users[index].address = pair.address
+        // allAddress[users[index].id] = pair.address
         moving()
-        keyring.saveAccount(pair)
+        // keyring.saveAccount(pair)
+        keyring.saveAddress(pair.address, { name: users[index].label })
       })
     }
 
@@ -433,19 +443,23 @@ export default defineComponent({
 
       let total = 0
       // Should be greater than the maximum number of trusts
-      const range = 100
+      // const range = 100
       Object.keys(edges).forEach(key => {
         const targrts = edges[key]
         const form = userPair(key)
-        for (let i = 0; i * range < targrts.length; i++) {
-          const dataSet = []
-          for (let index = 0; index < range && i * range + index < targrts.length; index++) {
-            const to = userPair(targrts[i * range + index])
-            dataSet.push([to.address])
-          }
-          total++
-          batchTx(form, 'zdTrust', 'trust', dataSet)
-        }
+        const dataSet = targrts.map(id => [userPair(id).address])
+        total++
+        batchTx(form, 'zdTrust', 'trust', dataSet)
+
+        // for (let i = 0; i * range < targrts.length; i++) {
+        //   const dataSet = []
+        //   for (let index = 0; index < range && i * range + index < targrts.length; index++) {
+        //     const to = userPair(targrts[i * range + index])
+        //     dataSet.push([to.address])
+        //   }
+        //   total++
+        //   batchTx(form, 'zdTrust', 'trust', dataSet)
+        // }
       })
       initStep(total)
       state.nextTx = true
@@ -618,7 +632,7 @@ export default defineComponent({
         () => state.nextTx,
         async nextTx => {
           if (!nextTx) return
-          const concurrent = 30
+          const concurrent = 10
 
           state.nextTx = false
 
