@@ -73,6 +73,8 @@ export default defineComponent({
     .ant-card-cover {
       max-height: 300px;
       overflow: hidden;
+      min-height: 120px;
+      background: linear-gradient(45deg, #0025ff, #ff7f0b);
     }
   }
   .info {

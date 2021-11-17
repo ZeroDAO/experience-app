@@ -1,7 +1,8 @@
 <template>
   <a-card class="head">
     <template #cover>
-      <img alt="example" src="../../../public/bg.jpg" />
+      <!-- <img alt="example" src="../../../public/bg.jpg" /> -->
+      <div></div>
     </template>
     <div class="info">
       <a-badge>
