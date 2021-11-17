@@ -49,7 +49,7 @@ const PRODUCTION = webpackConfig => {
 }
 
 module.exports = {
-  publicPath: IS_DEV ? '/' : '/vue3-ts-base',
+  publicPath: '/',
   css: {
     loaderOptions: {
       less: {

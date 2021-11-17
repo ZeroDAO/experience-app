@@ -6221,11 +6221,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   integrity sha1-Ila94U02MpWMRl68ltxGfKB6Kfs=
 
 graphology-indices@^0.14.0:
-  version "0.13.4"
-  resolved "https://registry.npmmirror.com/graphology-indices/download/graphology-indices-0.13.4.tgz#758b200d1b8cebec37c79b490e7850ca2f2cc12f"
-  integrity sha1-dYsgDRuM6+w3x5tJDnhQyi8swS8=
+  version "0.14.0"
+  resolved "https://registry.npmmirror.com/graphology-indices/download/graphology-indices-0.14.0.tgz#d0144f7933ba87f8b782f091ad7618a0ad523280"
+  integrity sha512-7o1bai8xjHb7mbse+JyFfa0/apIWb+LoLwu32EfNmvPWEyY+yUgspkMriXst9HKvDx1hgvu0AcddMy6LIECtmQ==
   dependencies:
-    graphology-utils "^1.7.0"
+    graphology-utils "^2.1.2"
     mnemonist "^0.38.0"
 
 graphology-metrics@^1.16.1:
@@ -6246,11 +6246,6 @@ graphology-shortest-path@^1.5.0:
     graphology-indices "^0.14.0"
     graphology-utils "^2.1.2"
     mnemonist "^0.38.1"
-
-graphology-utils@^1.7.0:
-  version "1.8.0"
-  resolved "https://registry.npmmirror.com/graphology-utils/download/graphology-utils-1.8.0.tgz#41315c468656e2a3e028a76468bbc2fbe42b0145"
-  integrity sha1-QTFcRoZW4qPgKKdkaLvC++QrAUU=
 
 graphology-utils@^2.1.2, graphology-utils@^2.3.0:
   version "2.3.0"
