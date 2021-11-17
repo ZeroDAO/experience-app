@@ -42,23 +42,23 @@ When using these Docker commands, you can access the UI via http://localhost:808
 
 The Game of Thrones character relationship test data is built into the experience-app, click on "Tests" in the left hand navigation
 
-![start](https://pic.tom24h.com/zerodao/github/start.png)]
+![start](https://pic.tom24h.com/zerodao/github/start.png)
 
 click on the "Start" button on the right hand side and the front-end will automatically run a simulation to send various types of transactions to the chain. 
 
-![info](https://pic.tom24h.com/zerodao/github/info.png)]
+![info](https://pic.tom24h.com/zerodao/github/info.png)
 
 Please be patient as the browser may lag due to the large amount of data. Once the data has been imported, you can see all the seeds from the *Seeds* page
 
-![seeds](https://pic.tom24h.com/zerodao/github/seeds.png)]
+![seeds](https://pic.tom24h.com/zerodao/github/seeds.png)
 
 Click on them to go to the home page where you can see the character's trust relationships, reputation values and so on.
 
-![user](https://pic.tom24h.com/zerodao/github/user.png)]
+![user](https://pic.tom24h.com/zerodao/github/user.png)
 
 If you have the Polkadot.js browser connected, you should be able to see a lot of transaction information and events.
 
-![blocks](https://pic.tom24h.com/zerodao/github/blocks.png)]
+![blocks](https://pic.tom24h.com/zerodao/github/blocks.png)
 
 #### Data Source
 
