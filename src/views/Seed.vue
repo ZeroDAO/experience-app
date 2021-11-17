@@ -1,6 +1,7 @@
 <template>
   <div class="seed">
-    <a-row :gutter="[16, 16]">
+    <a-result v-if="!seedList || seedList.length == 0" status="404" title="No Seed found" sub-title="Lost connection or not selected."> </a-result>
+    <a-row v-else :gutter="[16, 16]">
       <a-col v-for="(seed, i) in seedList" :key="i" :span="24" :lg="12">
         <user-card :address="seed" />
       </a-col>
@@ -21,6 +22,8 @@ export default defineComponent({
     const { api } = useSubstrateContext()
     const apiRef = computed(() => api)
     const seedList = useSeed(apiRef)
+    console.log(seedList)
+
     return {
       seedList
     }
