@@ -1,5 +1,5 @@
 /**
- * vue-i18n 使用姿势说明
+ * vue-i18n
  * see more : https://pikax.me/vue-composable/composable/i18n/i18n.html#parameters
  */
 

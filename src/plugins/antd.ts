@@ -3,7 +3,7 @@ import { Alert, Result, Progress, Steps, Typography, InputNumber, Modal, Radio, 
 /**
  * @description 手动注册 antd-vue 组件,达到按需加载目的
  * @description Automatically register components under Button, such as Button.Group
- * @param {ReturnType<typeof createApp>} app 整个应用的实例
+ * @param {ReturnType<typeof createApp>} app
  * @returns void
  */
 export default function loadComponent(app: any) {

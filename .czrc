@@ -11,52 +11,52 @@
   "defaultIssues": "",
   "types": {
     "feat": {
-      "description": "新功能",
-      "title": "新增"
+      "description": "new features",
+      "title": "add"
     },
     "fix": {
-      "description": "bug 修复",
-      "title": "修复"
+      "description": "bug fix",
+      "title": "fix"
     },
     "wip": {
-      "description": "功能正在开发中,提交以切换其他分支进行其他开发",
-      "title": "进行中"
+      "description": "feature in development, commit to switch to another branch for other development",
+      "title": "in progress"
     },
     "style": {
-      "description": "UI相关",
+      "description": "UI related",
       "title": "UI"
     },
     "refactor": {
-      "description": "代码重构",
-      "title": "重构"
+      "description": "code refactoring",
+      "title": "refactor"
     },
     "docs": {
-      "description": "文档更新",
-      "title": "文档"
+      "description": "document Updates",
+      "title": "docs"
     },
     "build": {
-      "description": "构建系统或者包依赖更新",
-      "title": "构建系统或者包依赖更新"
+      "description": "build system or package dependency updates",
+      "title": "build system or package dependency updates"
     },
     "ci": {
-      "description": "CI/CD,自动构建,持续集成相关",
+      "description": "CI/CD",
       "title": "CI/CD"
     },
     "test": {
-      "description": "测试用例相关",
-      "title": "测试"
+      "description": "test case related",
+      "title": "test"
     },
     "perf": {
-      "description": "优化",
-      "title": "优化"
+      "description": "perf",
+      "title": "perf"
     },
     "chore": {
-      "description": "非src或者测试文件的更新",
-      "title": "非 src 或者 测试文件的更新"
+      "description": "updates to non-src or test files",
+      "title": "updates to non-src or test files"
     },
     "revert": {
-      "description": "回到上一个版本",
-      "title": "回溯"
+      "description": "back to the previous version",
+      "title": "revert"
     }
   }
 }

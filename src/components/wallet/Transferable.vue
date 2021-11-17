@@ -1,10 +1,10 @@
 <template>
   <a-card class="transferable">
     <div class="card-item">
-      <div class="left"><span>Transferable</span><Balance :balance="accountData?.getUsableTransactionBalance()" /></div>
+      <div class="left"><span>Transferable</span><Balance :balance="usableTransactionBalance" /></div>
       <div class="card-bts">
-        <a-button type="primary" shape="round" size="large" @click="showSocialModal" ghost>Social Transfer</a-button>
-        <a-button type="primary" shape="round" size="large" @click="showTransferModal">Transfer</a-button>
+        <a-button type="primary" shape="round" size="large" :disabled="usableTransactionBalance == 0" @click="showSocialModal" ghost>Social Transfer</a-button>
+        <a-button type="primary" shape="round" size="large" :disabled="usableTransactionBalance == 0" @click="showTransferModal">Transfer</a-button>
       </div>
     </div>
     <a-divider />
@@ -64,11 +64,14 @@ export default defineComponent({
 
     const spinning = computed(() => store.state.general.isLoading)
 
+    const usableTransactionBalance = computed(() => (props.accountData ? (props.accountData as AccountBalance).getUsableTransactionBalance() : 0))
+
     return {
       transferVisible,
       socialVisible,
       showTransferModal,
       showSocialModal,
+      usableTransactionBalance,
       spinning,
       ...toRefs(props)
     }

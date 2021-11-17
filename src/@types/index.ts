@@ -116,11 +116,11 @@ export interface GeneralStateInterface {
   currentTheme: Theme
 }
 
-// ant-design-button 颜色
+// ant-design-button color
 export type ButtonColorType = 'primary' | 'danger' | 'dashed' | 'ghost' | 'default' | 'link'
 
-// icon的类型
+// icon
 export type IconType = 'icon' | 'iconfont'
 
-// 对话框打开类型
+// Modal
 export type ModalOpenMode = 'edit' | 'add' | 'other'

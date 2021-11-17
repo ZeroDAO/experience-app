@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 
 /**
- * @description 加载所有 Plugins
- * @param  {ReturnType<typeofcreateApp>} app 整个应用的实例
+ * @description Load all Plugins
+ * @param  {ReturnType<typeofcreateApp>} app
  */
 export function loadAllPlugins(app: ReturnType<typeof createApp>) {
   const files = require.context('.', true, /\.ts$/)

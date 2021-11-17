@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 
-/** 自动加载其他路由模块 */
+/** Automatic loading of other routing modules */
 const files = require.context('.', true, /\.ts$/)
 const modules: Array<RouteRecordRaw> = []
 files.keys().forEach(key => {
