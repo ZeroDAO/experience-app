@@ -1,10 +1,10 @@
 {
-  "name": "0p0-app",
+  "name": "ZeroDAO Eapp",
   "version": "0.0.1",
-  "description": "ZeroDAO",
+  "description": "ZeroDAO Experience app",
   "author": {
     "name": "DK Lee",
-    "email": "dev@0p0.org",
+    "email": "xiuerdwy@gmail.com",
     "url": "http://zerodao.net"
   },
   "scripts": {
