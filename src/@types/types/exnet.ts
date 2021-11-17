@@ -31,7 +31,7 @@ const definitions: RegistryTypes = {
     hasChallenge: 'bool',
     addAt: 'BlockNumber'
   },
-  PostResultHash: '[[u8; 2],u64,[u8; 8]]',
+  PostResultHash: '[[u8; 2],u64]',
   Path: {
     nodes: 'Vec<AccountId>',
     total: 'u32'
