@@ -21,7 +21,8 @@
     "test:api": "vue-cli-service test:unit ./tests/api/*.spec.ts",
     "test-dev:api": "vue-cli-service test:unit ./tests/api/*.spec.ts --watch",
     "analysis": "cross-env use_analyzer=true vue-cli-service build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "docker": "docker run --rm -it --name zerodao-eapp -p 8080:8080 zerodao/zerodao-eapp:v0.0.1"
   },
   "main": "dist/index.js",
   "files": [
