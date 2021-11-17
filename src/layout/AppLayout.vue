@@ -13,22 +13,22 @@
         </a-menu>
         <div class="sider-btm">
           <div>
-            <a-button type="primary" shape="circle">
+            <a-button href="https://twitter.com/zerodaonet" type="primary" shape="circle">
               <template #icon>
                 <IconFont type="icon-twitter" />
               </template>
             </a-button>
-            <a-button type="primary" shape="circle">
+            <a-button href="https://zerodao.medium.com/" type="primary" shape="circle">
               <template #icon>
                 <IconFont type="icon-medium" />
               </template>
             </a-button>
-            <a-button type="primary" shape="circle">
+            <a-button href="https://discord.gg/K56C6jtr" type="primary" shape="circle">
               <template #icon>
                 <IconFont type="icon-iconshareredditbeifen" />
               </template>
             </a-button>
-            <a-button type="primary" shape="circle">
+            <a-button href="https://github.com/ZeroDAO" type="primary" shape="circle">
               <template #icon>
                 <IconFont type="icon-github1" />
               </template>
@@ -185,7 +185,7 @@ export default defineComponent({
   margin-bottom: 20px;
   align-items: center;
   padding: 5px;
-  button {
+  a {
     margin-right: 5px;
   }
 }
