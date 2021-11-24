@@ -203,7 +203,7 @@ export default defineComponent({
     })
 
     let users = null
-    const allAddress = null
+    // const allAddress = null
     let seeds = null
     let edges = null
     let alice = null
@@ -247,9 +247,13 @@ export default defineComponent({
       percentInfo.value.total = total
       percentInfo.value.finish = 0
       percentInfo.value.error = 0
+      jobInfo.value.msgs = []
     }
 
     const moving = (isErr?: boolean) => {
+      if (isStop.value) {
+        throw new Error('Mission terminated!')
+      }
       if (isErr) {
         jobInfo.value.status = 'error'
         percentInfo.value.error += 1
@@ -330,12 +334,12 @@ export default defineComponent({
       }
     }
 
-    const initAllAddress = () => {
-      if (!allAddress) {
-        initUsers()
-        users = require(`@/testing-utils/data/nodes.json`)
-      }
-    }
+    // const initAllAddress = () => {
+    //   if (!allAddress) {
+    //     initUsers()
+    //     users = require(`@/testing-utils/data/nodes.json`)
+    //   }
+    // }
 
     const initSeeds = () => {
       if (!seeds) {
@@ -552,62 +556,73 @@ export default defineComponent({
       isStop.value = true
     }
 
+    const delay = fn => {
+      jobInfo.value.msgs = ['Preparing to move on to the next step...']
+      setTimeout(() => {
+        try {
+          fn()
+        } catch (error) {
+          jobInfo.value.status = 'error'
+          jobInfo.value.msgs.push(`Error: ${error}`)
+        }
+      }, 2000)
+    }
+
     const nextStep = () => {
       jobInfo.value.status = 'process'
       jobInfo.value.msgs = []
       deadlineRef.value = 0
 
-      try {
-        switch (current.value) {
-          case 0:
-            readFiles()
-            break
-          case 1:
-            addUsers()
-            break
-          case 2:
-            transferToUsers()
-            break
-          case 3:
-            transferSocToUsers()
-            break
-          case 4:
-            trust()
-            break
-          case 5:
-            newRound()
-            break
-          case 6:
-            newSeeds()
-            break
-          case 7:
-            waitingBlock()
-            break
-          case 8:
-            harvestSeeds()
-            break
-          case 9:
-            refreshReputationStart()
-            break
-          case 10:
-            updateReputations()
-            break
-          case 11:
-            waitingBlock()
-            break
-          case 12:
-            harvestAllReputations()
-            break
-          case 13:
-            onFinish()
-            break
-          default:
-            break
-        }
-      } catch (error) {
-        jobInfo.value.status = 'error'
-        jobInfo.value.msgs.push(`Error: ${error}`)
+      let fn = null
+
+      switch (current.value) {
+        case 0:
+          fn = readFiles
+          break
+        case 1:
+          fn = addUsers
+          break
+        case 2:
+          fn = transferToUsers
+          break
+        case 3:
+          fn = transferSocToUsers
+          break
+        case 4:
+          fn = trust
+          break
+        case 5:
+          fn = newRound
+          break
+        case 6:
+          fn = newSeeds
+          break
+        case 7:
+          fn = waitingBlock
+          break
+        case 8:
+          fn = harvestSeeds
+          break
+        case 9:
+          fn = refreshReputationStart
+          break
+        case 10:
+          fn = updateReputations
+          break
+        case 11:
+          fn = waitingBlock
+          break
+        case 12:
+          fn = harvestAllReputations
+          break
+        case 13:
+          fn = onFinish
+          break
+        default:
+          break
       }
+
+      delay(fn)
     }
 
     const start = async (restart?: boolean) => {
@@ -683,6 +698,12 @@ export default defineComponent({
 
 <style lang="less">
 .tests {
+  .ant-btn-dangerous[disabled],
+  .ant-btn-dangerous[disabled]:hover,
+  .ant-btn-dangerous[disabled]:focus,
+  .ant-btn-dangerous[disabled]:active {
+    color: #959597 !important;
+  }
   .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
     color: #fff;
   }
