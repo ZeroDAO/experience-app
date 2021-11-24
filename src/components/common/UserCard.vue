@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, toRefs } from 'vue'
+import { defineComponent, toRefs } from 'vue'
 import { useUserInfo } from '@/hooks'
 import TrustButton from '../home/TrustButton.vue'
 import Beachball from '../id/Beachball.vue'

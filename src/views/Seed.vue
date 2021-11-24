@@ -9,7 +9,7 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent, computed, ref } from 'vue'
+import { defineComponent, computed } from 'vue'
 import { useSubstrateContext } from '@/hooks/context/SubstrateContext'
 import { useSeed } from '../hooks'
 import UserCard from '@/components/common/UserCard.vue'
