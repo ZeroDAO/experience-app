@@ -55,8 +55,6 @@ export interface AccountInfo {
   }
 }
 
-export type AllUserInfo = Array<AccountInfo>
-
 export interface AccountExtension {
   trustList: string[]
   reputation: number[]

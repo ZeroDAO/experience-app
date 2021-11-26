@@ -1,6 +1,6 @@
 import { computed, ref, reactive, watch, watchEffect, Ref, toRefs } from 'vue'
 import { useStore } from 'vuex'
-import { StateType, AllUserInfo, AccountExtension, AccountInfo } from '@/@types'
+import { StateType, AccountExtension, AccountInfo } from '@/@types'
 import { ApiPromise } from '@polkadot/api'
 import { isValidAddressPolkadotAddress } from '@/utils/common'
 import { keyring } from '@polkadot/ui-keyring'
